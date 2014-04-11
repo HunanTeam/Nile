@@ -1,7 +1,7 @@
-﻿using Nop.Core.Domain.Orders;
-using Nop.Services.Events;
+﻿using Nile.Core.Domain.Orders;
+using Nile.Services.Events;
 
-namespace Nop.Services.Orders
+namespace Nile.Services.Orders
 {
     public static class EventPublisherExtensions
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Nop.Services.Tax
+namespace Nile.Services.Tax
 {
     /// <summary>
     /// Represents a result of tax calculation

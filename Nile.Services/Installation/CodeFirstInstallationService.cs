@@ -2,44 +2,44 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Data;
-using Nop.Core.Domain;
-using Nop.Core.Domain.Blogs;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Cms;
-using Nop.Core.Domain.Common;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Directory;
-using Nop.Core.Domain.Discounts;
-using Nop.Core.Domain.Forums;
-using Nop.Core.Domain.Localization;
-using Nop.Core.Domain.Logging;
-using Nop.Core.Domain.Media;
-using Nop.Core.Domain.Messages;
-using Nop.Core.Domain.News;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Domain.Payments;
-using Nop.Core.Domain.Polls;
-using Nop.Core.Domain.Security;
-using Nop.Core.Domain.Seo;
-using Nop.Core.Domain.Shipping;
-using Nop.Core.Domain.Stores;
-using Nop.Core.Domain.Tasks;
-using Nop.Core.Domain.Tax;
-using Nop.Core.Domain.Topics;
-using Nop.Core.Domain.Vendors;
-using Nop.Core.Infrastructure;
-using Nop.Core.IO;
-using Nop.Services.Common;
-using Nop.Services.Configuration;
-using Nop.Services.Customers;
-using Nop.Services.Helpers;
-using Nop.Services.Localization;
-using Nop.Services.Media;
-using Nop.Services.Seo;
+using Nile.Core;
+using Nile.Core.Data;
+using Nile.Core.Domain;
+using Nile.Core.Domain.Blogs;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Cms;
+using Nile.Core.Domain.Common;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Directory;
+using Nile.Core.Domain.Discounts;
+using Nile.Core.Domain.Forums;
+using Nile.Core.Domain.Localization;
+using Nile.Core.Domain.Logging;
+using Nile.Core.Domain.Media;
+using Nile.Core.Domain.Messages;
+using Nile.Core.Domain.News;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Domain.Payments;
+using Nile.Core.Domain.Polls;
+using Nile.Core.Domain.Security;
+using Nile.Core.Domain.Seo;
+using Nile.Core.Domain.Shipping;
+using Nile.Core.Domain.Stores;
+using Nile.Core.Domain.Tasks;
+using Nile.Core.Domain.Tax;
+using Nile.Core.Domain.Topics;
+using Nile.Core.Domain.Vendors;
+using Nile.Core.Infrastructure;
+using Nile.Core.IO;
+using Nile.Services.Common;
+using Nile.Services.Configuration;
+using Nile.Services.Customers;
+using Nile.Services.Helpers;
+using Nile.Services.Localization;
+using Nile.Services.Media;
+using Nile.Services.Seo;
 
-namespace Nop.Services.Installation
+namespace Nile.Services.Installation
 {
     public partial class CodeFirstInstallationService : IInstallationService
     {
@@ -391,7 +391,7 @@ namespace Nop.Services.Installation
                     CurrencyCode = "EUR",
                     Rate = 0.79M,
                     DisplayLocale = "",
-                    //CustomFormatting = "ˆ0.00",
+                    //CustomFormatting = "?.00",
                     CustomFormatting = string.Format("{0}0.00", "\u20ac"),
                     Published = true,
                     DisplayOrder = 6,
@@ -5727,7 +5727,7 @@ namespace Nop.Services.Installation
                 ProductType = ProductType.SimpleProduct, 
                 VisibleIndividually = true,
                 Name = "adidas Women's Supernova CSH 7 Running Shoe",
-                ShortDescription = "Now there are even more reasons to love this training favorite. An improved last, new step-in sockliner and the smooth control of 3-D ForMotion™ deliver a natural, balanced touchdown that feels better than ever.",
+                ShortDescription = "Now there are even more reasons to love this training favorite. An improved last, new step-in sockliner and the smooth control of 3-D ForMotion?deliver a natural, balanced touchdown that feels better than ever.",
                 FullDescription = "<p>Built to take you far and fast, Adidas Supernova Cushion 7 road-running shoes offer incredible cushioning and comfort with low weight. * Abrasion-resistant nylon mesh uppers are lightweight and highly breathable; synthetic leather overlays create structure and support * GeoFit construction at ankles provides an anatomically correct fit and extra comfort * Nylon linings and molded, antimicrobial dual-layer EVA footbeds dry quickly and fight odor * adiPRENE&reg; midsoles absorb shock in the heels and help maximize heel protection and stability * adiPRENE&reg;+ under forefeet retains natural propulsive forces for improved efficiency * Torsion&reg; system at the midfoot allows natural rotation between the rearfoot and the forefoot, helping improve surface adaptability * ForMotion&reg; freely moving, decoupled heel system allows your feet to adapt to the ground strike and adjust for forward momentum * adiWEAR&reg; rubber outsoles give ample durability in high-wear areas and offer lightweight grip and cushion Mens shoes , men's shoes , running shoes , adidas shoes , adidas running shoes , mens running shoes , snova running shoes , snova mens adidas , snova adidas running , snova shoes , sport shoes mens , sport shoes adidas , mens shoes , men's shoes , running , adidas</p>",
                 ProductTemplateId = productTemplateSimple.Id,
                 //SeName = "adidas-womens-supernova-csh-7-running-shoe",
@@ -7405,7 +7405,7 @@ namespace Nop.Services.Installation
             {
                 ProductType = ProductType.SimpleProduct,
                 VisibleIndividually = true,
-                Name = "Indiana Jones® Shapeable Wool Hat",
+                Name = "Indiana Jones?Shapeable Wool Hat",
                 ShortDescription = "Wear some adventure with the same hat Indiana Jones&reg; wears in his movies.",
                 FullDescription = "<p>Wear some adventure with the same hat Indiana Jones&reg; wears in his movies. Easy to shape to fit your personal style. Wool. Import. Please Note - Due to new UPS shipping rules and the size of the box, if you choose to expedite your hat order (UPS 3-day, 2-day or Overnight), an additional non-refundable $20 shipping charge per hat will be added at the time your order is processed.</p>",
                 ProductTemplateId = productTemplateSimple.Id,
@@ -9522,7 +9522,7 @@ namespace Nop.Services.Installation
                 {
                     Name = "Send emails",
                     Seconds = 60,
-                    Type = "Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services",
+                    Type = "Nile.Services.Messages.QueuedMessagesSendTask, Nile.Services",
                     Enabled = true,
                     StopOnError = false,
                 },
@@ -9530,7 +9530,7 @@ namespace Nop.Services.Installation
                 {
                     Name = "Keep alive",
                     Seconds = 300,
-                    Type = "Nop.Services.Common.KeepAliveTask, Nop.Services",
+                    Type = "Nile.Services.Common.KeepAliveTask, Nile.Services",
                     Enabled = true,
                     StopOnError = false,
                 },
@@ -9538,7 +9538,7 @@ namespace Nop.Services.Installation
                 {
                     Name = "Delete guests",
                     Seconds = 600,
-                    Type = "Nop.Services.Customers.DeleteGuestsTask, Nop.Services",
+                    Type = "Nile.Services.Customers.DeleteGuestsTask, Nile.Services",
                     Enabled = true,
                     StopOnError = false,
                 },
@@ -9546,7 +9546,7 @@ namespace Nop.Services.Installation
                 {
                     Name = "Clear cache",
                     Seconds = 600,
-                    Type = "Nop.Services.Caching.ClearCacheTask, Nop.Services",
+                    Type = "Nile.Services.Caching.ClearCacheTask, Nile.Services",
                     Enabled = false,
                     StopOnError = false,
                 },
@@ -9555,7 +9555,7 @@ namespace Nop.Services.Installation
                     Name = "Clear log",
                     //60 minutes
                     Seconds = 3600,
-                    Type = "Nop.Services.Logging.ClearLogTask, Nop.Services",
+                    Type = "Nile.Services.Logging.ClearLogTask, Nile.Services",
                     Enabled = false,
                     StopOnError = false,
                 },
@@ -9563,7 +9563,7 @@ namespace Nop.Services.Installation
                 {
                     Name = "Update currency exchange rates",
                     Seconds = 900,
-                    Type = "Nop.Services.Directory.UpdateExchangeRateTask, Nop.Services",
+                    Type = "Nile.Services.Directory.UpdateExchangeRateTask, Nile.Services",
                     Enabled = true,
                     StopOnError = false,
                 },

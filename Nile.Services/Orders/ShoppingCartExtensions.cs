@@ -1,11 +1,11 @@
 using System.Collections.Generic;
-using Nop.Core;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Orders;
-using Nop.Services.Localization;
+using Nile.Core;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Orders;
+using Nile.Services.Localization;
 
-namespace Nop.Services.Orders
+namespace Nile.Services.Orders
 {
     /// <summary>
     /// Represents a shopping cart
@@ -84,7 +84,7 @@ namespace Nop.Services.Orders
                 var product= sci.Product;
                 if (product == null)
                 {
-                    throw new NopException(string.Format("Product (Id={0}) cannot be loaded", sci.ProductId));
+                    throw new NileException(string.Format("Product (Id={0}) cannot be loaded", sci.ProductId));
                 }
 
                 string conflictError = localizationService.GetResource("ShoppingCart.ConflictingShipmentSchedules");

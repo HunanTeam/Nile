@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Forums;
-using Nop.Services.Common;
-using Nop.Services.Customers;
-using Nop.Services.Events;
-using Nop.Services.Messages;
+using Nile.Core;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Forums;
+using Nile.Services.Common;
+using Nile.Services.Customers;
+using Nile.Services.Events;
+using Nile.Services.Messages;
 
-namespace Nop.Services.Forums
+namespace Nile.Services.Forums
 {
     /// <summary>
     /// Forum service
@@ -1012,7 +1012,7 @@ namespace Nop.Services.Forums
             var customerTo = _customerService.GetCustomerById(privateMessage.ToCustomerId);
             if (customerTo == null)
             {
-                throw new NopException("Recipient could not be loaded");
+                throw new NileException("Recipient could not be loaded");
             }
 
             //UI notification

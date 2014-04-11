@@ -1,5 +1,5 @@
 
-namespace Nop.Services.Common
+namespace Nile.Services.Common
 {
     /// <summary>
     /// Full-Text service interface

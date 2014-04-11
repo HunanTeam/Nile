@@ -1,11 +1,11 @@
 using System;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Data;
-using Nop.Core.Domain.Polls;
-using Nop.Services.Events;
+using Nile.Core;
+using Nile.Core.Data;
+using Nile.Core.Domain.Polls;
+using Nile.Services.Events;
 
-namespace Nop.Services.Polls
+namespace Nile.Services.Polls
 {
     /// <summary>
     /// Poll service

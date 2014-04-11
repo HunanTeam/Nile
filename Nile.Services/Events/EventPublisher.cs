@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
-using Nop.Core.Infrastructure;
-using Nop.Core.Plugins;
-using Nop.Services.Logging;
+using Nile.Core.Infrastructure;
+using Nile.Core.Plugins;
+using Nile.Services.Logging;
 
-namespace Nop.Services.Events
+namespace Nile.Services.Events
 {
     /// <summary>
     /// Evnt publisher

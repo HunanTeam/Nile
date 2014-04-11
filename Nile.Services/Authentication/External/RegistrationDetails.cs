@@ -1,7 +1,7 @@
 //Contributor:  Nicholas Mayne
 
 
-namespace Nop.Services.Authentication.External
+namespace Nile.Services.Authentication.External
 {
     public struct RegistrationDetails
     {

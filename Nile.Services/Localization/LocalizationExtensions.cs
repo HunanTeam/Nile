@@ -1,13 +1,13 @@
 using System;
 using System.Linq.Expressions;
 using System.Reflection;
-using Nop.Core;
-using Nop.Core.Domain.Localization;
-using Nop.Core.Domain.Security;
-using Nop.Core.Infrastructure;
-using Nop.Core.Plugins;
+using Nile.Core;
+using Nile.Core.Domain.Localization;
+using Nile.Core.Domain.Security;
+using Nile.Core.Infrastructure;
+using Nile.Core.Plugins;
 
-namespace Nop.Services.Localization
+namespace Nile.Services.Localization
 {
     public static class LocalizationExtensions
     {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Nop.Core.Domain.Shipping;
+using Nile.Core.Domain.Shipping;
 
-namespace Nop.Services.Shipping
+namespace Nile.Services.Shipping
 {
     /// <summary>
     /// Represents a response of getting shipping rate options

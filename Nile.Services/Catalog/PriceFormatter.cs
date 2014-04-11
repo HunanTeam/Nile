@@ -1,13 +1,13 @@
 using System;
 using System.Globalization;
-using Nop.Core;
-using Nop.Core.Domain.Directory;
-using Nop.Core.Domain.Localization;
-using Nop.Core.Domain.Tax;
-using Nop.Services.Directory;
-using Nop.Services.Localization;
+using Nile.Core;
+using Nile.Core.Domain.Directory;
+using Nile.Core.Domain.Localization;
+using Nile.Core.Domain.Tax;
+using Nile.Services.Directory;
+using Nile.Services.Localization;
 
-namespace Nop.Services.Catalog
+namespace Nile.Services.Catalog
 {
     /// <summary>
     /// Price formatter

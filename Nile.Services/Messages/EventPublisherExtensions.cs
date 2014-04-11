@@ -1,8 +1,8 @@
-﻿using Nop.Core;
-using Nop.Core.Domain.Messages;
-using Nop.Services.Events;
+﻿using Nile.Core;
+using Nile.Core.Domain.Messages;
+using Nile.Services.Events;
 
-namespace Nop.Services.Messages
+namespace Nile.Services.Messages
 {
     public static class EventPublisherExtensions
     {

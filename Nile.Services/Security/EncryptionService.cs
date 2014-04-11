@@ -2,9 +2,9 @@
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
-using Nop.Core.Domain.Security;
+using Nile.Core.Domain.Security;
 
-namespace Nop.Services.Security
+namespace Nile.Services.Security
 {
     public class EncryptionService : IEncryptionService
     {

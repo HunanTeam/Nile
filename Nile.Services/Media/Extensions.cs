@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Web;
 
-namespace Nop.Services.Media
+namespace Nile.Services.Media
 {
     /// <summary>
     /// Extensions

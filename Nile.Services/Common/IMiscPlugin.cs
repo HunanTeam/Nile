@@ -1,7 +1,7 @@
 using System.Web.Routing;
-using Nop.Core.Plugins;
+using Nile.Core.Plugins;
 
-namespace Nop.Services.Common
+namespace Nile.Services.Common
 {
     /// <summary>
     /// Misc plugin interface. 

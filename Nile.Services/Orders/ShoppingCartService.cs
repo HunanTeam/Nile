@@ -1,21 +1,21 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Data;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Orders;
-using Nop.Services.Catalog;
-using Nop.Services.Common;
-using Nop.Services.Customers;
-using Nop.Services.Directory;
-using Nop.Services.Events;
-using Nop.Services.Localization;
-using Nop.Services.Security;
-using Nop.Services.Stores;
+using Nile.Core;
+using Nile.Core.Data;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Orders;
+using Nile.Services.Catalog;
+using Nile.Services.Common;
+using Nile.Services.Customers;
+using Nile.Services.Directory;
+using Nile.Services.Events;
+using Nile.Services.Localization;
+using Nile.Services.Security;
+using Nile.Services.Stores;
 
-namespace Nop.Services.Orders
+namespace Nile.Services.Orders
 {
     /// <summary>
     /// Shopping cart service

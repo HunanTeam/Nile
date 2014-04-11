@@ -1,11 +1,11 @@
 using System;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Data;
-using Nop.Core.Domain.Common;
-using Nop.Services.Events;
+using Nile.Core;
+using Nile.Core.Data;
+using Nile.Core.Domain.Common;
+using Nile.Services.Events;
 
-namespace Nop.Services.Common
+namespace Nile.Services.Common
 {
     /// <summary>
     /// Search term service

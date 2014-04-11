@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Directory;
-using Nop.Services.Events;
+using Nile.Core;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Directory;
+using Nile.Services.Events;
 
-namespace Nop.Services.Directory
+namespace Nile.Services.Directory
 {
     /// <summary>
     /// Measure dimension service
@@ -226,7 +226,7 @@ namespace Nop.Services.Directory
             {
                 decimal exchangeRatio = sourceMeasureDimension.Ratio;
                 if (exchangeRatio == decimal.Zero)
-                    throw new NopException(string.Format("Exchange ratio not set for dimension [{0}]", sourceMeasureDimension.Name));
+                    throw new NileException(string.Format("Exchange ratio not set for dimension [{0}]", sourceMeasureDimension.Name));
                 result = result / exchangeRatio;
             }
             return result;
@@ -247,7 +247,7 @@ namespace Nop.Services.Directory
             {
                 decimal exchangeRatio = targetMeasureDimension.Ratio;
                 if (exchangeRatio == decimal.Zero)
-                    throw new NopException(string.Format("Exchange ratio not set for dimension [{0}]", targetMeasureDimension.Name));
+                    throw new NileException(string.Format("Exchange ratio not set for dimension [{0}]", targetMeasureDimension.Name));
                 result = result * exchangeRatio;
             }
             return result;
@@ -392,7 +392,7 @@ namespace Nop.Services.Directory
             {
                 decimal exchangeRatio = sourceMeasureWeight.Ratio;
                 if (exchangeRatio == decimal.Zero)
-                    throw new NopException(string.Format("Exchange ratio not set for weight [{0}]", sourceMeasureWeight.Name));
+                    throw new NileException(string.Format("Exchange ratio not set for weight [{0}]", sourceMeasureWeight.Name));
                 result = result / exchangeRatio;
             }
             return result;
@@ -413,7 +413,7 @@ namespace Nop.Services.Directory
             {
                 decimal exchangeRatio = targetMeasureWeight.Ratio;
                 if (exchangeRatio == decimal.Zero)
-                    throw new NopException(string.Format("Exchange ratio not set for weight [{0}]", targetMeasureWeight.Name));
+                    throw new NileException(string.Format("Exchange ratio not set for weight [{0}]", targetMeasureWeight.Name));
                 result = result * exchangeRatio;
             }
             return result;

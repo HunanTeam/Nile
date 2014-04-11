@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Data;
-using Nop.Core.Domain.Messages;
-using Nop.Services.Events;
+using Nile.Core;
+using Nile.Core.Data;
+using Nile.Core.Domain.Messages;
+using Nile.Services.Events;
 
-namespace Nop.Services.Messages
+namespace Nile.Services.Messages
 {
     public partial class EmailAccountService:IEmailAccountService
     {
@@ -101,7 +101,7 @@ namespace Nop.Services.Messages
                 throw new ArgumentNullException("emailAccount");
 
             if (GetAllEmailAccounts().Count == 1)
-                throw new NopException("You cannot delete this email account. At least one account is required.");
+                throw new NileException("You cannot delete this email account. At least one account is required.");
 
             _emailAccountRepository.Delete(emailAccount);
 

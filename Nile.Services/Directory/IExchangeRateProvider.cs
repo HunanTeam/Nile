@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Nop.Core.Domain.Directory;
-using Nop.Core.Plugins;
+using Nile.Core.Domain.Directory;
+using Nile.Core.Plugins;
 
-namespace Nop.Services.Directory
+namespace Nile.Services.Directory
 {
     /// <summary>
     /// Exchange rate provider interface

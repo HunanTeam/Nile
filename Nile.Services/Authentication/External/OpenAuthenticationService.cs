@@ -3,12 +3,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core.Data;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Plugins;
-using Nop.Services.Customers;
+using Nile.Core.Data;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Plugins;
+using Nile.Services.Customers;
 
-namespace Nop.Services.Authentication.External
+namespace Nile.Services.Authentication.External
 {
     public partial class OpenAuthenticationService : IOpenAuthenticationService
     {

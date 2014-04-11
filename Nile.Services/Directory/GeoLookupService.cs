@@ -2,10 +2,10 @@
 using MaxMind.GeoIP2;
 using MaxMind.GeoIP2.Exceptions;
 using MaxMind.GeoIP2.Responses;
-using Nop.Core;
-using Nop.Services.Logging;
+using Nile.Core;
+using Nile.Services.Logging;
 
-namespace Nop.Services.Directory
+namespace Nile.Services.Directory
 {
     /// <summary>
     /// GEO lookup service

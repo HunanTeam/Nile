@@ -1,14 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core.Data;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Domain.Payments;
-using Nop.Core.Domain.Shipping;
-using Nop.Services.Helpers;
+using Nile.Core.Data;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Domain.Payments;
+using Nile.Core.Domain.Shipping;
+using Nile.Services.Helpers;
 
-namespace Nop.Services.Customers
+namespace Nile.Services.Customers
 {
     /// <summary>
     /// Customer report service

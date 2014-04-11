@@ -1,7 +1,7 @@
-﻿using Nop.Core.Domain.Shipping;
-using Nop.Services.Events;
+﻿using Nile.Core.Domain.Shipping;
+using Nile.Services.Events;
 
-namespace Nop.Services.Shipping
+namespace Nile.Services.Shipping
 {
     public static class EventPublisherExtensions
     {

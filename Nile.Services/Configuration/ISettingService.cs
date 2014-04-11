@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using Nop.Core.Configuration;
-using Nop.Core.Domain.Configuration;
+using Nile.Core.Configuration;
+using Nile.Core.Domain.Configuration;
 
-namespace Nop.Services.Configuration
+namespace Nile.Services.Configuration
 {
     /// <summary>
     /// Setting service interface

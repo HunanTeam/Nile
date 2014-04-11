@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core.Domain.Catalog;
-using Nop.Services.Localization;
+using Nile.Core.Domain.Catalog;
+using Nile.Services.Localization;
 
-namespace Nop.Services.Catalog
+namespace Nile.Services.Catalog
 {
     /// <summary>
     /// Extensions

@@ -1,14 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Security;
+using Nile.Core;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Security;
 
-namespace Nop.Services.Security
+namespace Nile.Services.Security
 {
     /// <summary>
     /// ACL service

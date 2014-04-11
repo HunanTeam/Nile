@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
-using Nop.Core.Domain.Orders;
+using Nile.Core.Domain.Orders;
 
-namespace Nop.Services.Orders
+namespace Nile.Services.Orders
 {
     public static class OrderExtensions
     {
@@ -21,7 +21,7 @@ namespace Nop.Services.Orders
             if (String.IsNullOrEmpty(text))
                 return string.Empty;
 
-            text = Nop.Core.Html.HtmlHelper.FormatText(text, false, true, false, false, false, false);
+            text = Nile.Core.Html.HtmlHelper.FormatText(text, false, true, false, false, false, false);
 
             return text;
         }

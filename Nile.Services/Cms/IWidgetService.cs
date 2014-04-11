@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Nop.Services.Cms
+namespace Nile.Services.Cms
 {
     /// <summary>
     /// Widget service interface

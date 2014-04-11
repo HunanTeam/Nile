@@ -3,9 +3,9 @@ using System.IO;
 using System.Text;
 using System.Web.Mvc;
 using System.Xml;
-using Nop.Core;
+using Nile.Core;
 
-namespace Nop.Services.Seo
+namespace Nile.Services.Seo
 {
     /// <summary>
     /// Represents a base sitemap generator

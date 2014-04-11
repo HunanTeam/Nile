@@ -1,14 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Discounts;
-using Nop.Core.Domain.Orders;
-using Nop.Services.Discounts;
+using Nile.Core;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Discounts;
+using Nile.Core.Domain.Orders;
+using Nile.Services.Discounts;
 
-namespace Nop.Services.Catalog
+namespace Nile.Services.Catalog
 {
     /// <summary>
     /// Price calculation service

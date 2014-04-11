@@ -1,6 +1,6 @@
-﻿using Nop.Services.Tasks;
+﻿using Nile.Services.Tasks;
 
-namespace Nop.Services.Logging
+namespace Nile.Services.Logging
 {
     /// <summary>
     /// Represents a task to clear [Log] table

@@ -1,8 +1,8 @@
 
 
-using Nop.Core.Domain.Customers;
+using Nile.Core.Domain.Customers;
 
-namespace Nop.Services.Orders
+namespace Nile.Services.Orders
 {
     /// <summary>
     /// Checkout attribute helper

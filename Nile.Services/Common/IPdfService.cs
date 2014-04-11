@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.IO;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Domain.Shipping;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Domain.Shipping;
 
-namespace Nop.Services.Common
+namespace Nile.Services.Common
 {
     /// <summary>
     /// Customer service interface

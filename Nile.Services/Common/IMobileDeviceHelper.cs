@@ -1,7 +1,7 @@
 
 using System.Web;
 
-namespace Nop.Services.Common
+namespace Nile.Services.Common
 {
     /// <summary>
     /// Mobile device helper interface

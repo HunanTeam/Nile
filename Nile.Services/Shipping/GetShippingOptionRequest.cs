@@ -1,10 +1,10 @@
 using System.Collections.Generic;
-using Nop.Core.Domain.Common;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Directory;
-using Nop.Core.Domain.Orders;
+using Nile.Core.Domain.Common;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Directory;
+using Nile.Core.Domain.Orders;
 
-namespace Nop.Services.Shipping
+namespace Nile.Services.Shipping
 {
     /// <summary>
     /// Represents a request for getting shipping rate options

@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core.Data;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Stores;
-using Nop.Core.Domain.Topics;
-using Nop.Services.Events;
+using Nile.Core.Data;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Stores;
+using Nile.Core.Domain.Topics;
+using Nile.Services.Events;
 
-namespace Nop.Services.Topics
+namespace Nile.Services.Topics
 {
     /// <summary>
     /// Topic service

@@ -5,16 +5,16 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Xml;
-using Nop.Core;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Common;
-using Nop.Core.Domain.Localization;
-using Nop.Data;
-using Nop.Services.Events;
-using Nop.Services.Logging;
+using Nile.Core;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Common;
+using Nile.Core.Domain.Localization;
+using Nile.Data;
+using Nile.Services.Events;
+using Nile.Services.Logging;
 
-namespace Nop.Services.Localization
+namespace Nile.Services.Localization
 {
     /// <summary>
     /// Provides information about localization

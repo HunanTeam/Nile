@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading;
 
-namespace Nop.Services.Tasks
+namespace Nile.Services.Tasks
 {
     /// <summary>
     /// Represents task thread

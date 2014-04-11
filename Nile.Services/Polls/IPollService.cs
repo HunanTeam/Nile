@@ -1,7 +1,7 @@
-using Nop.Core;
-using Nop.Core.Domain.Polls;
+using Nile.Core;
+using Nile.Core.Domain.Polls;
 
-namespace Nop.Services.Polls
+namespace Nile.Services.Polls
 {
     /// <summary>
     /// Poll service interface

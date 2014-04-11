@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using Nop.Core.Domain.Common;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Domain.Shipping;
+using Nile.Core.Domain.Common;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Domain.Shipping;
 
-namespace Nop.Services.Shipping
+namespace Nile.Services.Shipping
 {
     /// <summary>
     /// Shipping service interface

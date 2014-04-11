@@ -1,7 +1,7 @@
-using Nop.Core;
-using Nop.Core.Domain.Affiliates;
+using Nile.Core;
+using Nile.Core.Domain.Affiliates;
 
-namespace Nop.Services.Affiliates
+namespace Nile.Services.Affiliates
 {
     /// <summary>
     /// Affiliate service interface

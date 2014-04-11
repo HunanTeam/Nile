@@ -1,4 +1,4 @@
-namespace Nop.Services.Directory
+namespace Nile.Services.Directory
 {
     /// <summary>
     /// GEO lookup service

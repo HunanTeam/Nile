@@ -1,8 +1,8 @@
 ﻿using System;
-using Nop.Services.Logging;
-using Nop.Services.Tasks;
+using Nile.Services.Logging;
+using Nile.Services.Tasks;
 
-namespace Nop.Services.Messages
+namespace Nile.Services.Messages
 {
     /// <summary>
     /// Represents a task for sending queued message 

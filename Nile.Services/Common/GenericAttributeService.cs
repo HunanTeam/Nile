@@ -1,14 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Common;
-using Nop.Data;
-using Nop.Services.Events;
+using Nile.Core;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Common;
+using Nile.Data;
+using Nile.Services.Events;
 
-namespace Nop.Services.Common
+namespace Nile.Services.Common
 {
     /// <summary>
     /// Generic attribute service

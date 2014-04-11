@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Security;
-using Nop.Core.Domain.Stores;
-using Nop.Services.Events;
+using Nile.Core;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Security;
+using Nile.Core.Domain.Stores;
+using Nile.Services.Events;
 
-namespace Nop.Services.Catalog
+namespace Nile.Services.Catalog
 {
     /// <summary>
     /// Manufacturer service

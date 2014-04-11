@@ -1,8 +1,8 @@
 using System;
 using System.Collections.ObjectModel;
-using Nop.Core.Domain.Customers;
+using Nile.Core.Domain.Customers;
 
-namespace Nop.Services.Helpers
+namespace Nile.Services.Helpers
 {
     /// <summary>
     /// Represents a datetime helper

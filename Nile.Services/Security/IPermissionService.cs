@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Security;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Security;
 
-namespace Nop.Services.Security
+namespace Nile.Services.Security
 {
     /// <summary>
     /// Permission service interface

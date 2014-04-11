@@ -1,5 +1,5 @@
 ﻿
-namespace Nop.Services.Events
+namespace Nile.Services.Events
 {
     public interface IConsumer<T>
     {

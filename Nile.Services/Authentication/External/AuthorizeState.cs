@@ -3,7 +3,7 @@
 using System.Collections.Generic;
 using System.Web.Mvc;
 
-namespace Nop.Services.Authentication.External
+namespace Nile.Services.Authentication.External
 {
     public partial class AuthorizeState
     {

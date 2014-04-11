@@ -1,9 +1,9 @@
 ﻿using System;
-using Nop.Core.Domain.Tasks;
-using Nop.Core.Infrastructure;
-using Nop.Services.Logging;
+using Nile.Core.Domain.Tasks;
+using Nile.Core.Infrastructure;
+using Nile.Services.Logging;
 
-namespace Nop.Services.Tasks
+namespace Nile.Services.Tasks
 {
     /// <summary>
     /// Task

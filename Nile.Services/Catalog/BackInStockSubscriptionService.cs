@@ -1,14 +1,14 @@
 using System;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Data;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Customers;
-using Nop.Services.Common;
-using Nop.Services.Events;
-using Nop.Services.Messages;
+using Nile.Core;
+using Nile.Core.Data;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Customers;
+using Nile.Services.Common;
+using Nile.Services.Events;
+using Nile.Services.Messages;
 
-namespace Nop.Services.Catalog
+namespace Nile.Services.Catalog
 {
     /// <summary>
     /// Back in stock subscription service

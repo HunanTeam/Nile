@@ -1,14 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Localization;
-using Nop.Services.Configuration;
-using Nop.Services.Events;
-using Nop.Services.Stores;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Localization;
+using Nile.Services.Configuration;
+using Nile.Services.Events;
+using Nile.Services.Stores;
 
-namespace Nop.Services.Localization
+namespace Nile.Services.Localization
 {
     /// <summary>
     /// Language service

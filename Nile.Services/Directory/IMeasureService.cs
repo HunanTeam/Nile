@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Nop.Core.Domain.Directory;
+using Nile.Core.Domain.Directory;
 
-namespace Nop.Services.Directory
+namespace Nile.Services.Directory
 {
     /// <summary>
     /// Measure dimension service interface

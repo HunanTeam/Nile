@@ -1,17 +1,17 @@
 using System;
 using System.Text;
 using System.Web;
-using Nop.Core;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Html;
-using Nop.Services.Directory;
-using Nop.Services.Localization;
-using Nop.Services.Media;
-using Nop.Services.Tax;
+using Nile.Core;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Html;
+using Nile.Services.Directory;
+using Nile.Services.Localization;
+using Nile.Services.Media;
+using Nile.Services.Tax;
 
-namespace Nop.Services.Catalog
+namespace Nile.Services.Catalog
 {
     /// <summary>
     /// Product attribute formatter

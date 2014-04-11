@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Nop.Core;
-using Nop.Core.Domain.Common;
+using Nile.Core;
+using Nile.Core.Domain.Common;
 
-namespace Nop.Services.Common
+namespace Nile.Services.Common
 {
     public static class AddressExtensions
     {

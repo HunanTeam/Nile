@@ -1,9 +1,9 @@
 using System;
 using System.Linq.Expressions;
-using Nop.Core;
-using Nop.Core.Domain.Localization;
+using Nile.Core;
+using Nile.Core.Domain.Localization;
 
-namespace Nop.Services.Localization
+namespace Nile.Services.Localization
 {
     /// <summary>
     /// Localized entity service interface

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Nop.Services.Payments
+namespace Nile.Services.Payments
 {
     /// <summary>
     /// Represents a CancelRecurringPaymentResult

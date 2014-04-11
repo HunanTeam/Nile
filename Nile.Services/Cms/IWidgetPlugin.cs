@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Web.Routing;
-using Nop.Core.Plugins;
+using Nile.Core.Plugins;
 
-namespace Nop.Services.Cms
+namespace Nile.Services.Cms
 {
     /// <summary>
     /// Provides an interface for creating tax providers

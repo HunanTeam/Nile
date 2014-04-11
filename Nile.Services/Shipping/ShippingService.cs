@@ -1,23 +1,23 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Common;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Domain.Shipping;
-using Nop.Core.Plugins;
-using Nop.Services.Catalog;
-using Nop.Services.Common;
-using Nop.Services.Events;
-using Nop.Services.Localization;
-using Nop.Services.Logging;
-using Nop.Services.Orders;
+using Nile.Core;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Common;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Domain.Shipping;
+using Nile.Core.Plugins;
+using Nile.Services.Catalog;
+using Nile.Services.Common;
+using Nile.Services.Events;
+using Nile.Services.Localization;
+using Nile.Services.Logging;
+using Nile.Services.Orders;
 
-namespace Nop.Services.Shipping
+namespace Nile.Services.Shipping
 {
     /// <summary>
     /// Shipping service
@@ -732,7 +732,7 @@ namespace Nop.Services.Shipping
                     .ToList();
             }
             if (shippingRateComputationMethods.Count == 0)
-                throw new NopException("Shipping rate computation method could not be loaded");
+                throw new NileException("Shipping rate computation method could not be loaded");
 
 
 

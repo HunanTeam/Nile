@@ -16,7 +16,7 @@ using Nile.Core.Fakes;
 using Nile.Core.Infrastructure;
 using Nile.Core.Infrastructure.DependencyManagement;
 using Nile.Core.Plugins;
-using Nop.Data;
+using Nile.Data;
 using Nop.Services.Affiliates;
 using Nop.Services.Authentication;
 using Nop.Services.Authentication.External;

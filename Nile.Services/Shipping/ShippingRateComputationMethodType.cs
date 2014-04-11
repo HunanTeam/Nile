@@ -1,5 +1,5 @@
 
-namespace Nop.Services.Shipping
+namespace Nile.Services.Shipping
 {
     /// <summary>
     /// Represents a shipping rate computation method type

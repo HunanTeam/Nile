@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Nop.Core;
-using Nop.Core.Domain.Blogs;
+using Nile.Core;
+using Nile.Core.Domain.Blogs;
 
-namespace Nop.Services.Blogs
+namespace Nile.Services.Blogs
 {
     /// <summary>
     /// Blog service interface

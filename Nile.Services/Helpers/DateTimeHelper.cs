@@ -1,12 +1,12 @@
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using Nop.Core;
-using Nop.Core.Domain.Customers;
-using Nop.Services.Common;
-using Nop.Services.Configuration;
+using Nile.Core;
+using Nile.Core.Domain.Customers;
+using Nile.Services.Common;
+using Nile.Services.Configuration;
 
-namespace Nop.Services.Helpers
+namespace Nile.Services.Helpers
 {
     /// <summary>
     /// Represents a datetime helper

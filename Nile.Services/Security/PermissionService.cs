@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Security;
-using Nop.Services.Customers;
-using Nop.Services.Localization;
+using Nile.Core;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Security;
+using Nile.Services.Customers;
+using Nile.Services.Localization;
 
-namespace Nop.Services.Security
+namespace Nile.Services.Security
 {
     /// <summary>
     /// Permission service

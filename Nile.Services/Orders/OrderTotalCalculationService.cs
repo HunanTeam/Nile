@@ -1,22 +1,22 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Common;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Discounts;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Domain.Shipping;
-using Nop.Core.Domain.Tax;
-using Nop.Services.Catalog;
-using Nop.Services.Common;
-using Nop.Services.Discounts;
-using Nop.Services.Payments;
-using Nop.Services.Shipping;
-using Nop.Services.Tax;
+using Nile.Core;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Common;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Discounts;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Domain.Shipping;
+using Nile.Core.Domain.Tax;
+using Nile.Services.Catalog;
+using Nile.Services.Common;
+using Nile.Services.Discounts;
+using Nile.Services.Payments;
+using Nile.Services.Shipping;
+using Nile.Services.Tax;
 
-namespace Nop.Services.Orders
+namespace Nile.Services.Orders
 {
     /// <summary>
     /// Order service
@@ -580,7 +580,7 @@ namespace Nop.Services.Orders
 
                 var shippingRateComputationMethods = _shippingService.LoadActiveShippingRateComputationMethods(_storeContext.CurrentStore.Id);
                 if (shippingRateComputationMethods == null || shippingRateComputationMethods.Count == 0)
-                    throw new NopException("Shipping rate computation method could not be loaded");
+                    throw new NileException("Shipping rate computation method could not be loaded");
 
                 if (shippingRateComputationMethods.Count == 1)
                 {

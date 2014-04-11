@@ -1,10 +1,10 @@
 using System;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Infrastructure;
-using Nop.Data;
+using Nile.Core;
+using Nile.Core.Infrastructure;
+using Nile.Data;
 
-namespace Nop.Services.Common
+namespace Nile.Services.Common
 {
     public static class GenericAttributeExtensions
     {

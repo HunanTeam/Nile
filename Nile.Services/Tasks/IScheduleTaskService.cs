@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Nop.Core.Domain.Tasks;
+using Nile.Core.Domain.Tasks;
 
-namespace Nop.Services.Tasks
+namespace Nile.Services.Tasks
 {
     /// <summary>
     /// Task service interface

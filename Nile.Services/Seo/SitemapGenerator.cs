@@ -1,13 +1,13 @@
 using System;
 using System.Linq;
 using System.Web.Mvc;
-using Nop.Core;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Common;
-using Nop.Services.Catalog;
-using Nop.Services.Topics;
+using Nile.Core;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Common;
+using Nile.Services.Catalog;
+using Nile.Services.Topics;
 
-namespace Nop.Services.Seo
+namespace Nile.Services.Seo
 {
     /// <summary>
     /// Represents a sitemap generator

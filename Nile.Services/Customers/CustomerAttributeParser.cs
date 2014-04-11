@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Xml;
-using Nop.Core.Domain.Customers;
-using Nop.Services.Localization;
+using Nile.Core.Domain.Customers;
+using Nile.Services.Localization;
 
-namespace Nop.Services.Customers
+namespace Nile.Services.Customers
 {
     /// <summary>
     /// Cusomer attribute parser

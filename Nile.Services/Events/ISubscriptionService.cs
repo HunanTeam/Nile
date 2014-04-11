@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Nop.Services.Events
+namespace Nile.Services.Events
 {
     /// <summary>
     /// Event subscrption service

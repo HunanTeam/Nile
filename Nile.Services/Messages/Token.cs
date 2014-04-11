@@ -1,5 +1,5 @@
 ﻿
-namespace Nop.Services.Messages
+namespace Nile.Services.Messages
 {
     public sealed class Token
     {

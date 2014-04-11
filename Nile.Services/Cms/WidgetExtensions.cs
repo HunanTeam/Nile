@@ -1,7 +1,7 @@
 using System;
-using Nop.Core.Domain.Cms;
+using Nile.Core.Domain.Cms;
 
-namespace Nop.Services.Cms
+namespace Nile.Services.Cms
 {
     public static class WidgetExtensions
     {

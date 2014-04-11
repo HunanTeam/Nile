@@ -1,8 +1,8 @@
 ﻿using System.Net;
-using Nop.Core;
-using Nop.Services.Tasks;
+using Nile.Core;
+using Nile.Services.Tasks;
 
-namespace Nop.Services.Common
+namespace Nile.Services.Common
 {
     /// <summary>
     /// Represents a task for keeping the site alive

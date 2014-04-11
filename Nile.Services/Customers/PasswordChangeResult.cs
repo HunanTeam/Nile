@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Nop.Services.Customers 
+namespace Nile.Services.Customers 
 {
     public class PasswordChangeResult
     {

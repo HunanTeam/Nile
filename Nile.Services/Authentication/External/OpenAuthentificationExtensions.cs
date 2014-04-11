@@ -1,7 +1,7 @@
 using System;
-using Nop.Core.Domain.Customers;
+using Nile.Core.Domain.Customers;
 
-namespace Nop.Services.Authentication.External
+namespace Nile.Services.Authentication.External
 {
     public static class OpenAuthenticationExtensions
     {

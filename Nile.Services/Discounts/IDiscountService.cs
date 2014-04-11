@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using Nop.Core;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Discounts;
+using Nile.Core;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Discounts;
 
-namespace Nop.Services.Discounts
+namespace Nile.Services.Discounts
 {
     /// <summary>
     /// Discount service interface

@@ -1,8 +1,8 @@
 using System;
 using System.Linq;
-using Nop.Core.Domain.Shipping;
+using Nile.Core.Domain.Shipping;
 
-namespace Nop.Services.Shipping
+namespace Nile.Services.Shipping
 {
     public static class ShippingExtensions
     {

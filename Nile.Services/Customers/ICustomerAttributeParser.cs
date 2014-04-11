@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Nop.Core.Domain.Customers;
+using Nile.Core.Domain.Customers;
 
-namespace Nop.Services.Customers
+namespace Nile.Services.Customers
 {
     /// <summary>
     /// Cusomer attribute parser interface

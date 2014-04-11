@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Nop.Core;
-using Nop.Core.Domain.Media;
+using Nile.Core;
+using Nile.Core.Domain.Media;
 
-namespace Nop.Services.Media
+namespace Nile.Services.Media
 {
     /// <summary>
     /// Picture service interface

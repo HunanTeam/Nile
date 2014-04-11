@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace Nop.Services.Shipping.Tracking
+namespace Nile.Services.Shipping.Tracking
 {
     /// <summary>
     /// Shipment tracker

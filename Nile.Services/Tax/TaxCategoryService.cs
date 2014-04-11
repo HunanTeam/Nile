@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Tax;
-using Nop.Services.Events;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Tax;
+using Nile.Services.Events;
 
-namespace Nop.Services.Tax
+namespace Nile.Services.Tax
 {
     /// <summary>
     /// Tax category service

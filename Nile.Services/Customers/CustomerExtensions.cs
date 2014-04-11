@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Xml;
-using Nop.Core;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Infrastructure;
-using Nop.Services.Common;
-using Nop.Services.Localization;
+using Nile.Core;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Infrastructure;
+using Nile.Services.Common;
+using Nile.Services.Localization;
 
-namespace Nop.Services.Customers
+namespace Nile.Services.Customers
 {
     public static class CustomerExtensions
     {

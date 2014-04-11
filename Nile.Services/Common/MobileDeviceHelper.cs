@@ -1,9 +1,9 @@
 using System.Web;
-using Nop.Core;
-using Nop.Core.Domain;
-using Nop.Core.Domain.Customers;
+using Nile.Core;
+using Nile.Core.Domain;
+using Nile.Core.Domain.Customers;
 
-namespace Nop.Services.Common
+namespace Nile.Services.Common
 {
     /// <summary>
     /// Mobile device helper

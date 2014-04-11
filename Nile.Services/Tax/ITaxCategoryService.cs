@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Nop.Core.Domain.Tax;
+using Nile.Core.Domain.Tax;
 
-namespace Nop.Services.Tax
+namespace Nile.Services.Tax
 {
     /// <summary>
     /// Tax category service interface

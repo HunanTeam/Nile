@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core.Domain.Catalog;
-using Nop.Services.Security;
-using Nop.Services.Stores;
+using Nile.Core.Domain.Catalog;
+using Nile.Services.Security;
+using Nile.Services.Stores;
 
-namespace Nop.Services.Catalog
+namespace Nile.Services.Catalog
 {
     /// <summary>
     /// Extensions

@@ -1,6 +1,6 @@
-using Nop.Core.Domain.Customers;
+using Nile.Core.Domain.Customers;
 
-namespace Nop.Services.Authentication
+namespace Nile.Services.Authentication
 {
     /// <summary>
     /// Authentication service interface

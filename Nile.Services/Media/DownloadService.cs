@@ -1,13 +1,13 @@
 using System;
 using System.Linq;
-using Nop.Core.Data;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Media;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Domain.Payments;
-using Nop.Services.Events;
+using Nile.Core.Data;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Media;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Domain.Payments;
+using Nile.Services.Events;
 
-namespace Nop.Services.Media
+namespace Nile.Services.Media
 {
     /// <summary>
     /// Download service

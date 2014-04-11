@@ -1,7 +1,7 @@
 ﻿
-using Nop.Core.Plugins;
+using Nile.Core.Plugins;
 
-namespace Nop.Services.Discounts
+namespace Nile.Services.Discounts
 {
     /// <summary>
     /// Represents a discount requirement rule

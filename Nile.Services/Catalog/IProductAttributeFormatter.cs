@@ -1,7 +1,7 @@
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Customers;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Customers;
 
-namespace Nop.Services.Catalog
+namespace Nile.Services.Catalog
 {
     /// <summary>
     /// Product attribute formatter interface

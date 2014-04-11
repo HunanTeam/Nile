@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Nop.Core;
-using Nop.Core.Domain.Messages;
+using Nile.Core;
+using Nile.Core.Domain.Messages;
 
-namespace Nop.Services.Messages
+namespace Nile.Services.Messages
 {
     public partial interface IQueuedEmailService
     {

@@ -1,9 +1,9 @@
 ﻿using System;
-using Nop.Core.Domain.Directory;
-using Nop.Services.Configuration;
-using Nop.Services.Tasks;
+using Nile.Core.Domain.Directory;
+using Nile.Services.Configuration;
+using Nile.Services.Tasks;
 
-namespace Nop.Services.Directory
+namespace Nile.Services.Directory
 {
     /// <summary>
     /// Represents a task for updating exchange rates

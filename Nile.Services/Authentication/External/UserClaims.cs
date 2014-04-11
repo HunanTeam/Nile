@@ -2,7 +2,7 @@
 
 using System;
 
-namespace Nop.Services.Authentication.External
+namespace Nile.Services.Authentication.External
 {
     [Serializable]
     public partial class UserClaims

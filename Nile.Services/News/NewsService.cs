@@ -1,14 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Data;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.News;
-using Nop.Core.Domain.Stores;
-using Nop.Services.Events;
+using Nile.Core;
+using Nile.Core.Data;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.News;
+using Nile.Core.Domain.Stores;
+using Nile.Services.Events;
 
-namespace Nop.Services.News
+namespace Nile.Services.News
 {
     /// <summary>
     /// News service

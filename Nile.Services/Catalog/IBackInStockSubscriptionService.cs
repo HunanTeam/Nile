@@ -1,7 +1,7 @@
-using Nop.Core;
-using Nop.Core.Domain.Catalog;
+using Nile.Core;
+using Nile.Core.Domain.Catalog;
 
-namespace Nop.Services.Catalog
+namespace Nile.Services.Catalog
 {
     /// <summary>
     /// Back in stock subscription service interface

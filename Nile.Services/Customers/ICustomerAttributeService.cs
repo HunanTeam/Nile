@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Customers;
-using Nop.Services.Events;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Customers;
+using Nile.Services.Events;
 
-namespace Nop.Services.Customers
+namespace Nile.Services.Customers
 {
     /// <summary>
     /// Customer attribute service

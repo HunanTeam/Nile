@@ -1,10 +1,10 @@
 using System;
 using System.Web;
 using System.Web.Security;
-using Nop.Core.Domain.Customers;
-using Nop.Services.Customers;
+using Nile.Core.Domain.Customers;
+using Nile.Services.Customers;
 
-namespace Nop.Services.Authentication
+namespace Nile.Services.Authentication
 {
     /// <summary>
     /// Authentication service

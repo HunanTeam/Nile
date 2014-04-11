@@ -1,5 +1,5 @@
 ﻿
-namespace Nop.Services.Tasks
+namespace Nile.Services.Tasks
 {
     /// <summary>
     /// Interface that should be implemented by each task

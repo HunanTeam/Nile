@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Web;
-using Nop.Core.Domain.Catalog;
+using Nile.Core.Domain.Catalog;
 
-namespace Nop.Services.Catalog
+namespace Nile.Services.Catalog
 {
     /// <summary>
     /// Compare products service

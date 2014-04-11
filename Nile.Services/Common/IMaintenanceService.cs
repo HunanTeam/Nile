@@ -1,6 +1,6 @@
-using Nop.Core;
+using Nile.Core;
 
-namespace Nop.Services.Common
+namespace Nile.Services.Common
 {
     /// <summary>
     ///  Maintenance service interface

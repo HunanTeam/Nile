@@ -1,7 +1,7 @@
-using Nop.Core.Domain.Directory;
-using Nop.Core.Domain.Localization;
+using Nile.Core.Domain.Directory;
+using Nile.Core.Domain.Localization;
 
-namespace Nop.Services.Catalog
+namespace Nile.Services.Catalog
 {
     /// <summary>
     /// Price formatter

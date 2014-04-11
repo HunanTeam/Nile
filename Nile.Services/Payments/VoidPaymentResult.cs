@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Nop.Core.Domain.Payments;
+using Nile.Core.Domain.Payments;
 
-namespace Nop.Services.Payments
+namespace Nile.Services.Payments
 {
     /// <summary>
     /// Represents a VoidPaymentResult

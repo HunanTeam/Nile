@@ -1,7 +1,7 @@
-using Nop.Core;
-using Nop.Core.Domain.Vendors;
+using Nile.Core;
+using Nile.Core.Domain.Vendors;
 
-namespace Nop.Services.Vendors
+namespace Nile.Services.Vendors
 {
     /// <summary>
     /// Vendor service interface

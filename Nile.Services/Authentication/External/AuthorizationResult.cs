@@ -2,7 +2,7 @@
 
 using System.Collections.Generic;
 
-namespace Nop.Services.Authentication.External
+namespace Nile.Services.Authentication.External
 {
     public partial class AuthorizationResult
     {

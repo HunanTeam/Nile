@@ -2,16 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Data;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Domain.Payments;
-using Nop.Core.Domain.Shipping;
-using Nop.Services.Catalog;
-using Nop.Services.Helpers;
+using Nile.Core;
+using Nile.Core.Data;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Domain.Payments;
+using Nile.Core.Domain.Shipping;
+using Nile.Services.Catalog;
+using Nile.Services.Helpers;
 
-namespace Nop.Services.Orders
+namespace Nile.Services.Orders
 {
     /// <summary>
     /// Order report service

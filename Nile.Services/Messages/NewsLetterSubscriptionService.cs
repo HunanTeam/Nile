@@ -1,12 +1,12 @@
 using System;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Data;
-using Nop.Core.Domain.Messages;
-using Nop.Data;
-using Nop.Services.Events;
+using Nile.Core;
+using Nile.Core.Data;
+using Nile.Core.Domain.Messages;
+using Nile.Data;
+using Nile.Services.Events;
 
-namespace Nop.Services.Messages
+namespace Nile.Services.Messages
 {
 
     public class NewsLetterSubscriptionService : INewsLetterSubscriptionService

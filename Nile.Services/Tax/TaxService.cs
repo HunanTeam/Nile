@@ -2,16 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Nop.Core;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Common;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Domain.Tax;
-using Nop.Core.Plugins;
-using Nop.Services.Common;
+using Nile.Core;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Common;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Domain.Tax;
+using Nile.Core.Plugins;
+using Nile.Services.Common;
 
-namespace Nop.Services.Tax
+namespace Nile.Services.Tax
 {
     /// <summary>
     /// Tax service
@@ -158,7 +158,7 @@ namespace Nop.Services.Tax
             var activeTaxProvider = LoadActiveTaxProvider();
             if (activeTaxProvider == null)
             {
-                //throw new NopException("Active tax provider cannot be loaded. Please select at least one in admin area.");
+                //throw new NileException("Active tax provider cannot be loaded. Please select at least one in admin area.");
                 return;
             }
 
@@ -629,15 +629,17 @@ namespace Nop.Services.Tax
                 //The service returns INVALID_INPUT for country codes that are not uppercase.
                 twoLetterIsoCode = twoLetterIsoCode.ToUpper();
 
-            EuropaCheckVatService.checkVatService s = null;
+           // EuropaCheckVatService.checkVatService s = null;
 
             try
             {
-                bool valid;
-
-                s = new EuropaCheckVatService.checkVatService();
-                s.checkVat(ref twoLetterIsoCode, ref vatNumber, out valid, out name, out address);
                 exception = null;
+                return VatNumberStatus.Unknown;
+                bool valid=false;
+
+                //s = new EuropaCheckVatService.checkVatService();
+                //s.checkVat(ref twoLetterIsoCode, ref vatNumber, out valid, out name, out address);
+                //exception = null;
                 return valid ? VatNumberStatus.Valid : VatNumberStatus.Invalid;
             }
             catch (Exception ex)
@@ -654,8 +656,8 @@ namespace Nop.Services.Tax
                 if (address == null)
                     address = string.Empty;
 
-                if (s != null)
-                    s.Dispose();
+                //if (s != null)
+                //    s.Dispose();
             }
         }
        

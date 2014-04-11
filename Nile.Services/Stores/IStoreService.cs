@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Nop.Core.Domain.Stores;
+using Nile.Core.Domain.Stores;
 
-namespace Nop.Services.Stores
+namespace Nile.Services.Stores
 {
     /// <summary>
     /// Store service interface

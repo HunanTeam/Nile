@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using Nop.Core;
-using Nop.Core.Data;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Localization;
-using Nop.Core.Domain.Stores;
-using Nop.Core.Infrastructure;
-using Nop.Data;
-using Nop.Services.Customers;
-using Nop.Services.Localization;
+using Nile.Core;
+using Nile.Core.Data;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Localization;
+using Nile.Core.Domain.Stores;
+using Nile.Core.Infrastructure;
+using Nile.Data;
+using Nile.Services.Customers;
+using Nile.Services.Localization;
 
-namespace Nop.Services.Installation
+namespace Nile.Services.Installation
 {
     public partial class SqlFileInstallationService : IInstallationService
     {

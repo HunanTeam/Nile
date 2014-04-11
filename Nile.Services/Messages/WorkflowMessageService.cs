@@ -1,23 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Domain.Blogs;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Forums;
-using Nop.Core.Domain.Messages;
-using Nop.Core.Domain.News;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Domain.Shipping;
-using Nop.Core.Domain.Stores;
-using Nop.Core.Domain.Vendors;
-using Nop.Services.Customers;
-using Nop.Services.Events;
-using Nop.Services.Localization;
-using Nop.Services.Stores;
+using Nile.Core;
+using Nile.Core.Domain.Blogs;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Forums;
+using Nile.Core.Domain.Messages;
+using Nile.Core.Domain.News;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Domain.Shipping;
+using Nile.Core.Domain.Stores;
+using Nile.Core.Domain.Vendors;
+using Nile.Services.Customers;
+using Nile.Services.Events;
+using Nile.Services.Localization;
+using Nile.Services.Stores;
 
-namespace Nop.Services.Messages
+namespace Nile.Services.Messages
 {
     public partial class WorkflowMessageService : IWorkflowMessageService
     {

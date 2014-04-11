@@ -4,9 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
-using Nop.Core.Domain.Messages;
+using Nile.Core.Domain.Messages;
 
-namespace Nop.Services.Messages
+namespace Nile.Services.Messages
 {
     /// <summary>
     /// Email sender

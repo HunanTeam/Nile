@@ -1,7 +1,7 @@
-using Nop.Core;
-using Nop.Core.Domain.Seo;
+using Nile.Core;
+using Nile.Core.Domain.Seo;
 
-namespace Nop.Services.Seo
+namespace Nile.Services.Seo
 {
     /// <summary>
     /// Provides information about URL records

@@ -1,11 +1,11 @@
 ﻿using System;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Forums;
-using Nop.Core.Html;
-using Nop.Core.Infrastructure;
-using Nop.Services.Customers;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Forums;
+using Nile.Core.Html;
+using Nile.Core.Infrastructure;
+using Nile.Services.Customers;
 
-namespace Nop.Services.Forums
+namespace Nile.Services.Forums
 {
     public static class ForumExtensions
     {
@@ -80,7 +80,7 @@ namespace Nop.Services.Forums
             if (String.IsNullOrEmpty(text))
                 return string.Empty;
 
-            text = Nop.Core.Html.HtmlHelper.FormatText(text, false, true, false, false, false, false);
+            text = Nile.Core.Html.HtmlHelper.FormatText(text, false, true, false, false, false, false);
             return text;
         }
 
@@ -96,7 +96,7 @@ namespace Nop.Services.Forums
             if (String.IsNullOrEmpty(text))
                 return string.Empty;
 
-            text = Nop.Core.Html.HtmlHelper.FormatText(text, false, true, false, true, false, false);
+            text = Nile.Core.Html.HtmlHelper.FormatText(text, false, true, false, true, false, false);
 
             return text;
         }

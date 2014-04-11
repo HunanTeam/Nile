@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core.Domain.Cms;
-using Nop.Core.Plugins;
+using Nile.Core.Domain.Cms;
+using Nile.Core.Plugins;
 
-namespace Nop.Services.Cms
+namespace Nile.Services.Cms
 {
     /// <summary>
     /// Widget service

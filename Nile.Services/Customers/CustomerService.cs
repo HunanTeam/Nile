@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Blogs;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Common;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Forums;
-using Nop.Core.Domain.News;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Domain.Polls;
-using Nop.Core.Domain.Shipping;
-using Nop.Services.Common;
-using Nop.Services.Events;
+using Nile.Core;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Blogs;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Common;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Forums;
+using Nile.Core.Domain.News;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Domain.Polls;
+using Nile.Core.Domain.Shipping;
+using Nile.Services.Common;
+using Nile.Services.Events;
 
-namespace Nop.Services.Customers
+namespace Nile.Services.Customers
 {
     /// <summary>
     /// Customer service
@@ -336,7 +336,7 @@ namespace Nop.Services.Customers
                 throw new ArgumentNullException("customer");
 
             if (customer.IsSystemAccount)
-                throw new NopException(string.Format("System customer account ({0}) could not be deleted", customer.SystemName));
+                throw new NileException(string.Format("System customer account ({0}) could not be deleted", customer.SystemName));
 
             customer.Deleted = true;
 
@@ -478,7 +478,7 @@ namespace Nop.Services.Customers
             //add to 'Guests' role
             var guestRole = GetCustomerRoleBySystemName(SystemCustomerRoleNames.Guests);
             if (guestRole == null)
-                throw new NopException("'Guests' role could not be loaded");
+                throw new NileException("'Guests' role could not be loaded");
             customer.CustomerRoles.Add(guestRole);
 
             _customerRepository.Insert(customer);
@@ -582,7 +582,7 @@ namespace Nop.Services.Customers
         {
             var guestRole = GetCustomerRoleBySystemName(SystemCustomerRoleNames.Guests);
             if (guestRole == null)
-                throw new NopException("'Guests' role could not be loaded");
+                throw new NileException("'Guests' role could not be loaded");
 
             var query = _customerRepository.Table;
             if (createdFromUtc.HasValue)
@@ -690,7 +690,7 @@ namespace Nop.Services.Customers
                 throw new ArgumentNullException("customerRole");
 
             if (customerRole.IsSystemRole)
-                throw new NopException("System role could not be deleted");
+                throw new NileException("System role could not be deleted");
 
             _customerRoleRepository.Delete(customerRole);
 

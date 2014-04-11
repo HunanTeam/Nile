@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core.Domain.Blogs;
+using Nile.Core.Domain.Blogs;
 
-namespace Nop.Services.Blogs
+namespace Nile.Services.Blogs
 {
     /// <summary>
     /// Extensions

@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Domain.Payments;
-using Nop.Core.Plugins;
-using Nop.Services.Configuration;
+using Nile.Core;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Domain.Payments;
+using Nile.Core.Plugins;
+using Nile.Services.Configuration;
 
-namespace Nop.Services.Payments
+namespace Nile.Services.Payments
 {
     /// <summary>
     /// Payment service
@@ -157,7 +157,7 @@ namespace Nop.Services.Payments
                 }
                 var paymentMethod = LoadPaymentMethodBySystemName(processPaymentRequest.PaymentMethodSystemName);
                 if (paymentMethod == null)
-                    throw new NopException("Payment method couldn't be loaded");
+                    throw new NileException("Payment method couldn't be loaded");
                 return paymentMethod.ProcessPayment(processPaymentRequest);
             }
         }
@@ -174,7 +174,7 @@ namespace Nop.Services.Payments
 
             var paymentMethod = LoadPaymentMethodBySystemName(postProcessPaymentRequest.Order.PaymentMethodSystemName);
             if (paymentMethod == null)
-                throw new NopException("Payment method couldn't be loaded");
+                throw new NileException("Payment method couldn't be loaded");
             paymentMethod.PostProcessPayment(postProcessPaymentRequest);
         }
 
@@ -256,7 +256,7 @@ namespace Nop.Services.Payments
         {
             var paymentMethod = LoadPaymentMethodBySystemName(capturePaymentRequest.Order.PaymentMethodSystemName);
             if (paymentMethod == null)
-                throw new NopException("Payment method couldn't be loaded");
+                throw new NileException("Payment method couldn't be loaded");
             return paymentMethod.Capture(capturePaymentRequest);
         }
 
@@ -297,7 +297,7 @@ namespace Nop.Services.Payments
         {
             var paymentMethod = LoadPaymentMethodBySystemName(refundPaymentRequest.Order.PaymentMethodSystemName);
             if (paymentMethod == null)
-                throw new NopException("Payment method couldn't be loaded");
+                throw new NileException("Payment method couldn't be loaded");
             return paymentMethod.Refund(refundPaymentRequest);
         }
         
@@ -325,7 +325,7 @@ namespace Nop.Services.Payments
         {
             var paymentMethod = LoadPaymentMethodBySystemName(voidPaymentRequest.Order.PaymentMethodSystemName);
             if (paymentMethod == null)
-                throw new NopException("Payment method couldn't be loaded");
+                throw new NileException("Payment method couldn't be loaded");
             return paymentMethod.Void(voidPaymentRequest);
         }
 
@@ -363,7 +363,7 @@ namespace Nop.Services.Payments
             {
                 var paymentMethod = LoadPaymentMethodBySystemName(processPaymentRequest.PaymentMethodSystemName);
                 if (paymentMethod == null)
-                    throw new NopException("Payment method couldn't be loaded");
+                    throw new NileException("Payment method couldn't be loaded");
                 return paymentMethod.ProcessRecurringPayment(processPaymentRequest);
             }
         }
@@ -380,7 +380,7 @@ namespace Nop.Services.Payments
 
             var paymentMethod = LoadPaymentMethodBySystemName(cancelPaymentRequest.Order.PaymentMethodSystemName);
             if (paymentMethod == null)
-                throw new NopException("Payment method couldn't be loaded");
+                throw new NileException("Payment method couldn't be loaded");
             return paymentMethod.CancelRecurringPayment(cancelPaymentRequest);
         }
 

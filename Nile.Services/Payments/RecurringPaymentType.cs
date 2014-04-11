@@ -1,4 +1,4 @@
-namespace Nop.Services.Payments
+namespace Nile.Services.Payments
 {
     /// <summary>
     /// Represents a recurring payment type

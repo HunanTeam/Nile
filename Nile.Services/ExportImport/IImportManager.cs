@@ -1,7 +1,7 @@
 ﻿
 using System.IO;
 
-namespace Nop.Services.ExportImport
+namespace Nile.Services.ExportImport
 {
     /// <summary>
     /// Import manager interface

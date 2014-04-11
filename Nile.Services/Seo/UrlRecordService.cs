@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Localization;
-using Nop.Core.Domain.Seo;
+using Nile.Core;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Localization;
+using Nile.Core.Domain.Seo;
 
-namespace Nop.Services.Seo
+namespace Nile.Services.Seo
 {
     /// <summary>
     /// Provides information about URL records

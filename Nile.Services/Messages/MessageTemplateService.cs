@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Messages;
-using Nop.Core.Domain.Stores;
-using Nop.Services.Events;
-using Nop.Services.Localization;
-using Nop.Services.Stores;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Messages;
+using Nile.Core.Domain.Stores;
+using Nile.Services.Events;
+using Nile.Services.Localization;
+using Nile.Services.Stores;
 
-namespace Nop.Services.Messages
+namespace Nile.Services.Messages
 {
     public partial class MessageTemplateService: IMessageTemplateService
     {

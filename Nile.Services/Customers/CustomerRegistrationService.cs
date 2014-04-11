@@ -1,12 +1,12 @@
 using System;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Domain.Customers;
-using Nop.Services.Localization;
-using Nop.Services.Messages;
-using Nop.Services.Security;
+using Nile.Core;
+using Nile.Core.Domain.Customers;
+using Nile.Services.Localization;
+using Nile.Services.Messages;
+using Nile.Services.Security;
 
-namespace Nop.Services.Customers
+namespace Nile.Services.Customers
 {
     /// <summary>
     /// Customer registration service
@@ -205,7 +205,7 @@ namespace Nop.Services.Customers
             //add to 'Registered' role
             var registeredRole = _customerService.GetCustomerRoleBySystemName(SystemCustomerRoleNames.Registered);
             if (registeredRole == null)
-                throw new NopException("'Registered' role could not be loaded");
+                throw new NileException("'Registered' role could not be loaded");
             request.Customer.CustomerRoles.Add(registeredRole);
             //remove from 'Guests' role
             var guestRole = request.Customer.CustomerRoles.FirstOrDefault(cr => cr.SystemName == SystemCustomerRoleNames.Guests);
@@ -326,14 +326,14 @@ namespace Nop.Services.Customers
             string oldEmail = customer.Email;
 
             if (!CommonHelper.IsValidEmail(newEmail))
-                throw new NopException(_localizationService.GetResource("Account.EmailUsernameErrors.NewEmailIsNotValid"));
+                throw new NileException(_localizationService.GetResource("Account.EmailUsernameErrors.NewEmailIsNotValid"));
 
             if (newEmail.Length > 100)
-                throw new NopException(_localizationService.GetResource("Account.EmailUsernameErrors.EmailTooLong"));
+                throw new NileException(_localizationService.GetResource("Account.EmailUsernameErrors.EmailTooLong"));
 
             var customer2 = _customerService.GetCustomerByEmail(newEmail);
             if (customer2 != null && customer.Id != customer2.Id)
-                throw new NopException(_localizationService.GetResource("Account.EmailUsernameErrors.EmailAlreadyExists"));
+                throw new NileException(_localizationService.GetResource("Account.EmailUsernameErrors.EmailAlreadyExists"));
 
             customer.Email = newEmail;
             _customerService.UpdateCustomer(customer);
@@ -361,19 +361,19 @@ namespace Nop.Services.Customers
                 throw new ArgumentNullException("customer");
 
             if (!_customerSettings.UsernamesEnabled)
-                throw new NopException("Usernames are disabled");
+                throw new NileException("Usernames are disabled");
 
             if (!_customerSettings.AllowUsersToChangeUsernames)
-                throw new NopException("Changing usernames is not allowed");
+                throw new NileException("Changing usernames is not allowed");
 
             newUsername = newUsername.Trim();
 
             if (newUsername.Length > 100)
-                throw new NopException(_localizationService.GetResource("Account.EmailUsernameErrors.UsernameTooLong"));
+                throw new NileException(_localizationService.GetResource("Account.EmailUsernameErrors.UsernameTooLong"));
 
             var user2 = _customerService.GetCustomerByUsername(newUsername);
             if (user2 != null && customer.Id != user2.Id)
-                throw new NopException(_localizationService.GetResource("Account.EmailUsernameErrors.UsernameAlreadyExists"));
+                throw new NileException(_localizationService.GetResource("Account.EmailUsernameErrors.UsernameAlreadyExists"));
 
             customer.Username = newUsername;
             _customerService.UpdateCustomer(customer);

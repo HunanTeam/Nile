@@ -1,8 +1,8 @@
 using System;
-using Nop.Core.Domain.Media;
-using Nop.Core.Domain.Orders;
+using Nile.Core.Domain.Media;
+using Nile.Core.Domain.Orders;
 
-namespace Nop.Services.Media
+namespace Nile.Services.Media
 {
     /// <summary>
     /// Download service interface

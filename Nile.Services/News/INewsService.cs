@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Nop.Core;
-using Nop.Core.Domain.News;
+using Nile.Core;
+using Nile.Core.Domain.News;
 
-namespace Nop.Services.News
+namespace Nile.Services.News
 {
     /// <summary>
     /// News service interface

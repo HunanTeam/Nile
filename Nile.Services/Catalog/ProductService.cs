@@ -2,21 +2,21 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Common;
-using Nop.Core.Domain.Localization;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Domain.Security;
-using Nop.Core.Domain.Stores;
-using Nop.Data;
-using Nop.Services.Events;
-using Nop.Services.Localization;
-using Nop.Services.Messages;
+using Nile.Core;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Common;
+using Nile.Core.Domain.Localization;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Domain.Security;
+using Nile.Core.Domain.Stores;
+using Nile.Data;
+using Nile.Services.Events;
+using Nile.Services.Localization;
+using Nile.Services.Messages;
 
-namespace Nop.Services.Catalog
+namespace Nile.Services.Catalog
 {
     /// <summary>
     /// Product service

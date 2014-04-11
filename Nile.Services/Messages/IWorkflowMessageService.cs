@@ -1,14 +1,14 @@
-﻿using Nop.Core.Domain.Blogs;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Forums;
-using Nop.Core.Domain.Messages;
-using Nop.Core.Domain.News;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Domain.Shipping;
-using Nop.Core.Domain.Vendors;
+﻿using Nile.Core.Domain.Blogs;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Forums;
+using Nile.Core.Domain.Messages;
+using Nile.Core.Domain.News;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Domain.Shipping;
+using Nile.Core.Domain.Vendors;
 
-namespace Nop.Services.Messages
+namespace Nile.Services.Messages
 {
     public partial interface IWorkflowMessageService
     {

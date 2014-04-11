@@ -1,7 +1,7 @@
-﻿using Nop.Core;
-using Nop.Core.Events;
+﻿using Nile.Core;
+using Nile.Core.Events;
 
-namespace Nop.Services.Events
+namespace Nile.Services.Events
 {
     public static class EventPublisherExtensions
     {

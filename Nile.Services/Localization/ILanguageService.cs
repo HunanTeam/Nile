@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Nop.Core.Domain.Localization;
+using Nile.Core.Domain.Localization;
 
-namespace Nop.Services.Localization
+namespace Nile.Services.Localization
 {
     /// <summary>
     /// Language service interface

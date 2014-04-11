@@ -3,7 +3,7 @@ using Autofac;
 using Autofac.Integration.Mvc;
 using Nile.Core.Data;
 using Nile.Core.Infrastructure.DependencyManagement;
-using Nop.Data;
+using Nile.Data;
 
 namespace Nop.Web.Framework.Mvc
 {

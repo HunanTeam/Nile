@@ -5,25 +5,25 @@ using System.IO;
 using System.Linq;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
-using Nop.Core;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Common;
-using Nop.Core.Domain.Directory;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Domain.Shipping;
-using Nop.Core.Domain.Tax;
-using Nop.Core.Html;
-using Nop.Services.Catalog;
-using Nop.Services.Configuration;
-using Nop.Services.Directory;
-using Nop.Services.Helpers;
-using Nop.Services.Localization;
-using Nop.Services.Media;
-using Nop.Services.Orders;
-using Nop.Services.Payments;
-using Nop.Services.Stores;
+using Nile.Core;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Common;
+using Nile.Core.Domain.Directory;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Domain.Shipping;
+using Nile.Core.Domain.Tax;
+using Nile.Core.Html;
+using Nile.Services.Catalog;
+using Nile.Services.Configuration;
+using Nile.Services.Directory;
+using Nile.Services.Helpers;
+using Nile.Services.Localization;
+using Nile.Services.Media;
+using Nile.Services.Orders;
+using Nile.Services.Payments;
+using Nile.Services.Stores;
 
-namespace Nop.Services.Common
+namespace Nile.Services.Common
 {
     /// <summary>
     /// PDF service
@@ -287,7 +287,7 @@ namespace Nop.Services.Common
                 if (order.ShippingStatus != ShippingStatus.ShippingNotRequired)
                 {
                     if (order.ShippingAddress == null)
-                        throw new NopException(string.Format("Shipping is required, but address is not available. Order ID = {0}", order.Id));
+                        throw new NileException(string.Format("Shipping is required, but address is not available. Order ID = {0}", order.Id));
                     cell = new PdfPCell();
                     cell.Border = Rectangle.NO_BORDER;
 

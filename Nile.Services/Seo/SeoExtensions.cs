@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Nop.Core;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Forums;
-using Nop.Core.Domain.Seo;
-using Nop.Core.Infrastructure;
-using Nop.Services.Localization;
+using Nile.Core;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Forums;
+using Nile.Core.Domain.Seo;
+using Nile.Core.Infrastructure;
+using Nile.Services.Localization;
 
-namespace Nop.Services.Seo
+namespace Nile.Services.Seo
 {
     public static class SeoExtensions
     {

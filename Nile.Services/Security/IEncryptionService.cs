@@ -1,5 +1,5 @@
 ﻿
-namespace Nop.Services.Security 
+namespace Nile.Services.Security 
 {
     public interface IEncryptionService 
     {

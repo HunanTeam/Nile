@@ -1,9 +1,9 @@
 //Contributor:  Nicholas Mayne
 
 using System.Web.Routing;
-using Nop.Core.Plugins;
+using Nile.Core.Plugins;
 
-namespace Nop.Services.Authentication.External
+namespace Nile.Services.Authentication.External
 {
     /// <summary>
     /// Provides an interface for creating external authentication methods

@@ -1,7 +1,7 @@
-using Nop.Core.Domain.Common;
-using Nop.Core.Domain.Customers;
+using Nile.Core.Domain.Common;
+using Nile.Core.Domain.Customers;
 
-namespace Nop.Services.Tax
+namespace Nile.Services.Tax
 {
     /// <summary>
     /// Represents a request for tax calculation

@@ -1,7 +1,7 @@
-using Nop.Core;
-using Nop.Core.Domain.Common;
+using Nile.Core;
+using Nile.Core.Domain.Common;
 
-namespace Nop.Services.Common
+namespace Nile.Services.Common
 {
     /// <summary>
     /// Search term service interafce

@@ -2,9 +2,9 @@
 
 using System.Collections.Generic;
 using System.Web;
-using Nop.Core.Infrastructure;
+using Nile.Core.Infrastructure;
 
-namespace Nop.Services.Authentication.External
+namespace Nile.Services.Authentication.External
 {
     public static partial class ExternalAuthorizerHelper
     {

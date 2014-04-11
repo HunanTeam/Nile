@@ -1,14 +1,14 @@
 using System;
 using System.IO;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Domain.Catalog;
-using Nop.Services.Catalog;
-using Nop.Services.Media;
-using Nop.Services.Seo;
+using Nile.Core;
+using Nile.Core.Domain.Catalog;
+using Nile.Services.Catalog;
+using Nile.Services.Media;
+using Nile.Services.Seo;
 using OfficeOpenXml;
 
-namespace Nop.Services.ExportImport
+namespace Nile.Services.ExportImport
 {
     /// <summary>
     /// Import manager
@@ -72,7 +72,7 @@ namespace Nop.Services.ExportImport
                 // get the first worksheet in the workbook
                 var worksheet = xlPackage.Workbook.Worksheets.FirstOrDefault();
                 if (worksheet == null)
-                    throw new NopException("No worksheet found");
+                    throw new NileException("No worksheet found");
 
                 //the columns
                 var properties = new string[]

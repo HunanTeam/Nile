@@ -1,7 +1,7 @@
 ﻿using System;
-using Nop.Services.Tasks;
+using Nile.Services.Tasks;
 
-namespace Nop.Services.Customers
+namespace Nile.Services.Customers
 {
     /// <summary>
     /// Represents a task for deleting guest customers

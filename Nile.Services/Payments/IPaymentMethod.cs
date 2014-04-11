@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Web.Routing;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Plugins;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Plugins;
 
-namespace Nop.Services.Payments
+namespace Nile.Services.Payments
 {
     /// <summary>
     /// Provides an interface for creating payment gateways & methods

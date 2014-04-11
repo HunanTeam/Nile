@@ -1,7 +1,7 @@
 using System.Web.Routing;
-using Nop.Core.Plugins;
+using Nile.Core.Plugins;
 
-namespace Nop.Services.Tax
+namespace Nile.Services.Tax
 {
     /// <summary>
     /// Provides an interface for creating tax providers

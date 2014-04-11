@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using Nop.Core.Infrastructure;
+using Nile.Core.Infrastructure;
 
-namespace Nop.Services.Tasks
+namespace Nile.Services.Tasks
 {
     /// <summary>
     /// Represents task manager

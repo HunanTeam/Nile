@@ -1,8 +1,8 @@
-﻿using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Discounts;
-using Nop.Core.Domain.Stores;
+﻿using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Discounts;
+using Nile.Core.Domain.Stores;
 
-namespace Nop.Services.Discounts
+namespace Nile.Services.Discounts
 {
     /// <summary>
     /// Represents a discount requirement request

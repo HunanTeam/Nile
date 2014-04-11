@@ -3,36 +3,36 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
-using Nop.Core;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Common;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Directory;
-using Nop.Core.Domain.Discounts;
-using Nop.Core.Domain.Localization;
-using Nop.Core.Domain.Logging;
-using Nop.Core.Domain.Orders;
-using Nop.Core.Domain.Payments;
-using Nop.Core.Domain.Shipping;
-using Nop.Core.Domain.Tax;
-using Nop.Core.Domain.Vendors;
-using Nop.Services.Affiliates;
-using Nop.Services.Catalog;
-using Nop.Services.Common;
-using Nop.Services.Customers;
-using Nop.Services.Directory;
-using Nop.Services.Discounts;
-using Nop.Services.Events;
-using Nop.Services.Localization;
-using Nop.Services.Logging;
-using Nop.Services.Messages;
-using Nop.Services.Payments;
-using Nop.Services.Security;
-using Nop.Services.Shipping;
-using Nop.Services.Tax;
-using Nop.Services.Vendors;
+using Nile.Core;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Common;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Directory;
+using Nile.Core.Domain.Discounts;
+using Nile.Core.Domain.Localization;
+using Nile.Core.Domain.Logging;
+using Nile.Core.Domain.Orders;
+using Nile.Core.Domain.Payments;
+using Nile.Core.Domain.Shipping;
+using Nile.Core.Domain.Tax;
+using Nile.Core.Domain.Vendors;
+using Nile.Services.Affiliates;
+using Nile.Services.Catalog;
+using Nile.Services.Common;
+using Nile.Services.Customers;
+using Nile.Services.Directory;
+using Nile.Services.Discounts;
+using Nile.Services.Events;
+using Nile.Services.Localization;
+using Nile.Services.Logging;
+using Nile.Services.Messages;
+using Nile.Services.Payments;
+using Nile.Services.Security;
+using Nile.Services.Shipping;
+using Nile.Services.Tax;
+using Nile.Services.Vendors;
 
-namespace Nop.Services.Orders
+namespace Nile.Services.Orders
 {
     /// <summary>
     /// Order processing service
@@ -594,32 +594,32 @@ namespace Nop.Services.Orders
 
                 //check whether customer is guest
                 if (customer.IsGuest() && !_orderSettings.AnonymousCheckoutAllowed)
-                    throw new NopException("Anonymous checkout is not allowed");
+                    throw new NileException("Anonymous checkout is not allowed");
 
                 //billing address
                 Address billingAddress = null;
                 if (!processPaymentRequest.IsRecurringPayment)
                 {
                     if (customer.BillingAddress == null)
-                        throw new NopException("Billing address is not provided");
+                        throw new NileException("Billing address is not provided");
 
                     if (!CommonHelper.IsValidEmail(customer.BillingAddress.Email))
-                        throw new NopException("Email is not valid");
+                        throw new NileException("Email is not valid");
 
                     //clone billing address
                     billingAddress = (Address)customer.BillingAddress.Clone();
                     if (billingAddress.Country != null && !billingAddress.Country.AllowsBilling)
-                        throw new NopException(string.Format("Country '{0}' is not allowed for billing", billingAddress.Country.Name));
+                        throw new NileException(string.Format("Country '{0}' is not allowed for billing", billingAddress.Country.Name));
                 }
                 else
                 {
                     if (initialOrder.BillingAddress == null)
-                        throw new NopException("Billing address is not available");
+                        throw new NileException("Billing address is not available");
 
                     //clone billing address
                     billingAddress = (Address)initialOrder.BillingAddress.Clone();
                     if (billingAddress.Country != null && !billingAddress.Country.AllowsBilling)
-                        throw new NopException(string.Format("Country '{0}' is not allowed for billing", billingAddress.Country.Name));
+                        throw new NileException(string.Format("Country '{0}' is not allowed for billing", billingAddress.Country.Name));
                 }
 
                 //checkout attributes
@@ -646,7 +646,7 @@ namespace Nop.Services.Orders
                         .ToList();
 
                     if (cart.Count == 0)
-                        throw new NopException("Cart is empty");
+                        throw new NileException("Cart is empty");
 
                     //validate the entire shopping cart
                     var warnings = _shoppingCartService.GetShoppingCartWarnings(cart,
@@ -660,7 +660,7 @@ namespace Nop.Services.Orders
                             warningsSb.Append(warning);
                             warningsSb.Append(";");
                         }
-                        throw new NopException(warningsSb.ToString());
+                        throw new NileException(warningsSb.ToString());
                     }
 
                     //validate individual cart items
@@ -677,7 +677,7 @@ namespace Nop.Services.Orders
                                 warningsSb.Append(warning);
                                 warningsSb.Append(";");
                             }
-                            throw new NopException(warningsSb.ToString());
+                            throw new NileException(warningsSb.ToString());
                         }
                     }
                 }
@@ -689,13 +689,13 @@ namespace Nop.Services.Orders
                     if (!minOrderSubtotalAmountOk)
                     {
                         decimal minOrderSubtotalAmount = _currencyService.ConvertFromPrimaryStoreCurrency(_orderSettings.MinOrderSubtotalAmount, _workContext.WorkingCurrency);
-                        throw new NopException(string.Format(_localizationService.GetResource("Checkout.MinOrderSubtotalAmount"), _priceFormatter.FormatPrice(minOrderSubtotalAmount, true, false)));
+                        throw new NileException(string.Format(_localizationService.GetResource("Checkout.MinOrderSubtotalAmount"), _priceFormatter.FormatPrice(minOrderSubtotalAmount, true, false)));
                     }
                     bool minOrderTotalAmountOk = ValidateMinOrderTotalAmount(cart);
                     if (!minOrderTotalAmountOk)
                     {
                         decimal minOrderTotalAmount = _currencyService.ConvertFromPrimaryStoreCurrency(_orderSettings.MinOrderTotalAmount, _workContext.WorkingCurrency);
-                        throw new NopException(string.Format(_localizationService.GetResource("Checkout.MinOrderTotalAmount"), _priceFormatter.FormatPrice(minOrderTotalAmount, true, false)));
+                        throw new NileException(string.Format(_localizationService.GetResource("Checkout.MinOrderTotalAmount"), _priceFormatter.FormatPrice(minOrderTotalAmount, true, false)));
                     }
                 }
 
@@ -771,15 +771,15 @@ namespace Nop.Services.Orders
                     if (!processPaymentRequest.IsRecurringPayment)
                     {
                         if (customer.ShippingAddress == null)
-                            throw new NopException("Shipping address is not provided");
+                            throw new NileException("Shipping address is not provided");
 
                         if (!CommonHelper.IsValidEmail(customer.ShippingAddress.Email))
-                            throw new NopException("Email is not valid");
+                            throw new NileException("Email is not valid");
 
                         //clone shipping address
                         shippingAddress = (Address)customer.ShippingAddress.Clone();
                         if (shippingAddress.Country != null && !shippingAddress.Country.AllowsShipping)
-                            throw new NopException(string.Format("Country '{0}' is not allowed for shipping", shippingAddress.Country.Name));
+                            throw new NileException(string.Format("Country '{0}' is not allowed for shipping", shippingAddress.Country.Name));
 
                         var shippingOption = customer.GetAttribute<ShippingOption>(SystemCustomerAttributeNames.SelectedShippingOption, processPaymentRequest.StoreId);
                         if (shippingOption != null)
@@ -791,12 +791,12 @@ namespace Nop.Services.Orders
                     else
                     {
                         if (initialOrder.ShippingAddress == null)
-                            throw new NopException("Shipping address is not available");
+                            throw new NileException("Shipping address is not available");
 
                         //clone billing address
                         shippingAddress = (Address)initialOrder.ShippingAddress.Clone();
                         if (shippingAddress.Country != null && !shippingAddress.Country.AllowsShipping)
-                            throw new NopException(string.Format("Country '{0}' is not allowed for shipping", shippingAddress.Country.Name));
+                            throw new NileException(string.Format("Country '{0}' is not allowed for shipping", shippingAddress.Country.Name));
 
                         shippingMethodName = initialOrder.ShippingMethod;
                         shippingRateComputationMethodSystemName = initialOrder.ShippingRateComputationMethodSystemName;
@@ -813,7 +813,7 @@ namespace Nop.Services.Orders
                     orderShippingTotalInclTax = _orderTotalCalculationService.GetShoppingCartShippingTotal(cart, true, out taxRate, out shippingTotalDiscount);
                     orderShippingTotalExclTax = _orderTotalCalculationService.GetShoppingCartShippingTotal(cart, false);
                     if (!orderShippingTotalInclTax.HasValue || !orderShippingTotalExclTax.HasValue)
-                        throw new NopException("Shipping total couldn't be calculated");
+                        throw new NileException("Shipping total couldn't be calculated");
 
                     if (shippingTotalDiscount != null && !appliedDiscounts.ContainsDiscount(shippingTotalDiscount))
                         appliedDiscounts.Add(shippingTotalDiscount);
@@ -883,7 +883,7 @@ namespace Nop.Services.Orders
                         out orderDiscountAmount, out orderAppliedDiscount, out appliedGiftCards,
                         out redeemedRewardPoints, out redeemedRewardPointsAmount);
                     if (!orderTotal.HasValue)
-                        throw new NopException("Order total couldn't be calculated");
+                        throw new NileException("Order total couldn't be calculated");
 
                     //discount history
                     if (orderAppliedDiscount != null && !appliedDiscounts.ContainsDiscount(orderAppliedDiscount))
@@ -909,11 +909,11 @@ namespace Nop.Services.Orders
                 {
                     paymentMethod = _paymentService.LoadPaymentMethodBySystemName(processPaymentRequest.PaymentMethodSystemName);
                     if (paymentMethod == null)
-                        throw new NopException("Payment method couldn't be loaded");
+                        throw new NileException("Payment method couldn't be loaded");
 
                     //ensure that payment method is active
                     if (!paymentMethod.IsPaymentMethodActive(_paymentSettings))
-                        throw new NopException("Payment method is not active");
+                        throw new NileException("Payment method is not active");
                 }
                 else
                     processPaymentRequest.PaymentMethodSystemName = "";
@@ -931,7 +931,7 @@ namespace Nop.Services.Orders
                         string recurringCyclesError = cart.GetRecurringCycleInfo(_localizationService,
                             out recurringCycleLength, out recurringCyclePeriod, out recurringTotalCycles);
                         if (!string.IsNullOrEmpty(recurringCyclesError))
-                            throw new NopException(recurringCyclesError);
+                            throw new NileException(recurringCyclesError);
                         processPaymentRequest.RecurringCycleLength = recurringCycleLength;
                         processPaymentRequest.RecurringCyclePeriod = recurringCyclePeriod;
                         processPaymentRequest.RecurringTotalCycles = recurringTotalCycles;
@@ -954,13 +954,13 @@ namespace Nop.Services.Orders
                             switch (recurringPaymentType)
                             {
                                 case RecurringPaymentType.NotSupported:
-                                    throw new NopException("Recurring payments are not supported by selected payment method");
+                                    throw new NileException("Recurring payments are not supported by selected payment method");
                                 case RecurringPaymentType.Manual:
                                 case RecurringPaymentType.Automatic:
                                     processPaymentResult = _paymentService.ProcessRecurringPayment(processPaymentRequest);
                                     break;
                                 default:
-                                    throw new NopException("Not supported recurring payment type");
+                                    throw new NileException("Not supported recurring payment type");
                             }
                         }
                         else
@@ -990,7 +990,7 @@ namespace Nop.Services.Orders
                             switch (recurringPaymentType)
                             {
                                 case RecurringPaymentType.NotSupported:
-                                    throw new NopException("Recurring payments are not supported by selected payment method");
+                                    throw new NileException("Recurring payments are not supported by selected payment method");
                                 case RecurringPaymentType.Manual:
                                     processPaymentResult = _paymentService.ProcessRecurringPayment(processPaymentRequest);
                                     break;
@@ -999,12 +999,12 @@ namespace Nop.Services.Orders
                                     processPaymentResult = new ProcessPaymentResult();
                                     break;
                                 default:
-                                    throw new NopException("Not supported recurring payment type");
+                                    throw new NileException("Not supported recurring payment type");
                             }
                         }
                         else
                         {
-                            throw new NopException("No recurring products");
+                            throw new NileException("No recurring products");
                         }
                     }
                 }
@@ -1017,7 +1017,7 @@ namespace Nop.Services.Orders
                 }
 
                 if (processPaymentResult == null)
-                    throw new NopException("processPaymentResult is not available");
+                    throw new NileException("processPaymentResult is not available");
 
                 #endregion
 
@@ -1540,19 +1540,19 @@ namespace Nop.Services.Orders
             try
             {
                 if (!recurringPayment.IsActive)
-                    throw new NopException("Recurring payment is not active");
+                    throw new NileException("Recurring payment is not active");
 
                 var initialOrder = recurringPayment.InitialOrder;
                 if (initialOrder == null)
-                    throw new NopException("Initial order could not be loaded");
+                    throw new NileException("Initial order could not be loaded");
 
                 var customer = initialOrder.Customer;
                 if (customer == null)
-                    throw new NopException("Customer could not be loaded");
+                    throw new NileException("Customer could not be loaded");
 
                 var nextPaymentDate = recurringPayment.NextPaymentDate;
                 if (!nextPaymentDate.HasValue)
-                    throw new NopException("Next payment date could not be calculated");
+                    throw new NileException("Next payment date could not be calculated");
 
                 //payment info
                 var paymentInfo = new ProcessPaymentRequest()
@@ -1572,7 +1572,7 @@ namespace Nop.Services.Orders
                 if (result.Success)
                 {
                     if (result.PlacedOrder == null)
-                        throw new NopException("Placed order could not be loaded");
+                        throw new NileException("Placed order could not be loaded");
 
                     var rph = new RecurringPaymentHistory()
                     {
@@ -1592,7 +1592,7 @@ namespace Nop.Services.Orders
                         if (i != result.Errors.Count - 1)
                             error += ". ";
                     }
-                    throw new NopException(error);
+                    throw new NileException(error);
                 }
             }
             catch (Exception exc)
@@ -1864,7 +1864,7 @@ namespace Nop.Services.Orders
                 throw new ArgumentNullException("order");
 
             if (!CanCancelOrder(order))
-                throw new NopException("Cannot do cancel for order.");
+                throw new NileException("Cannot do cancel for order.");
 
             //Cancel order
             SetOrderStatus(order, OrderStatus.Cancelled, notifyCustomer);
@@ -1972,7 +1972,7 @@ namespace Nop.Services.Orders
                 throw new ArgumentNullException("order");
 
             if (!CanCapture(order))
-                throw new NopException("Cannot do capture for order.");
+                throw new NileException("Cannot do capture for order.");
 
             var request = new CapturePaymentRequest();
             CapturePaymentResult result = null;
@@ -2076,7 +2076,7 @@ namespace Nop.Services.Orders
                 throw new ArgumentNullException("order");
 
             if (!CanMarkOrderAsPaid(order))
-                throw new NopException("You can't mark this order as paid");
+                throw new NileException("You can't mark this order as paid");
 
             order.PaymentStatusId = (int)PaymentStatus.Paid;
             order.PaidDateUtc = DateTime.UtcNow;
@@ -2136,7 +2136,7 @@ namespace Nop.Services.Orders
                 throw new ArgumentNullException("order");
 
             if (!CanRefund(order))
-                throw new NopException("Cannot do refund for order.");
+                throw new NileException("Cannot do refund for order.");
 
             var request = new RefundPaymentRequest();
             RefundPaymentResult result = null;
@@ -2236,7 +2236,7 @@ namespace Nop.Services.Orders
                 throw new ArgumentNullException("order");
 
             if (!CanRefundOffline(order))
-                throw new NopException("You can't refund this order");
+                throw new NileException("You can't refund this order");
 
             //amout to refund
             decimal amountToRefund = order.OrderTotal;
@@ -2307,7 +2307,7 @@ namespace Nop.Services.Orders
                 throw new ArgumentNullException("order");
 
             if (!CanPartiallyRefund(order, amountToRefund))
-                throw new NopException("Cannot do partial refund for order.");
+                throw new NileException("Cannot do partial refund for order.");
 
             var request = new RefundPaymentRequest();
             RefundPaymentResult result = null;
@@ -2419,7 +2419,7 @@ namespace Nop.Services.Orders
                 throw new ArgumentNullException("order");
             
             if (!CanPartiallyRefundOffline(order, amountToRefund))
-                throw new NopException("You can't partially refund (offline) this order");
+                throw new NileException("You can't partially refund (offline) this order");
 
             //total amount refunded
             decimal totalAmountRefunded = order.RefundedAmount + amountToRefund;
@@ -2480,7 +2480,7 @@ namespace Nop.Services.Orders
                 throw new ArgumentNullException("order");
 
             if (!CanVoid(order))
-                throw new NopException("Cannot do void for order.");
+                throw new NileException("Cannot do void for order.");
 
             var request = new VoidPaymentRequest();
             VoidPaymentResult result = null;
@@ -2574,7 +2574,7 @@ namespace Nop.Services.Orders
                 throw new ArgumentNullException("order");
 
             if (!CanVoidOffline(order))
-                throw new NopException("You can't void this order");
+                throw new NileException("You can't void this order");
 
             order.PaymentStatusId = (int)PaymentStatus.Voided;
             _orderService.UpdateOrder(order);

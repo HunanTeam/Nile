@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using Nop.Core;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Logging;
+using Nile.Core;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Logging;
 
-namespace Nop.Services.Logging
+namespace Nile.Services.Logging
 {
     /// <summary>
     /// Customer activity service interface

@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core.Infrastructure;
+using Nile.Core.Infrastructure;
 
-namespace Nop.Services.Shipping.Tracking
+namespace Nile.Services.Shipping.Tracking
 {
     /// <summary>
     /// General shipment tracker (finds an appropriate tracker by tracking number)

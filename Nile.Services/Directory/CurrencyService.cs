@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Directory;
-using Nop.Core.Plugins;
-using Nop.Services.Events;
-using Nop.Services.Stores;
+using Nile.Core;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Directory;
+using Nile.Core.Plugins;
+using Nile.Services.Events;
+using Nile.Services.Stores;
 
-namespace Nop.Services.Directory
+namespace Nile.Services.Directory
 {
     /// <summary>
     /// Currency service
@@ -246,7 +246,7 @@ namespace Nop.Services.Directory
             {
                 decimal exchangeRate = sourceCurrencyCode.Rate;
                 if (exchangeRate == decimal.Zero)
-                    throw new NopException(string.Format("Exchange rate not found for currency [{0}]", sourceCurrencyCode.Name));
+                    throw new NileException(string.Format("Exchange rate not found for currency [{0}]", sourceCurrencyCode.Name));
                 result = result / exchangeRate;
             }
             return result;
@@ -266,7 +266,7 @@ namespace Nop.Services.Directory
             {
                 decimal exchangeRate = targetCurrencyCode.Rate;
                 if (exchangeRate == decimal.Zero)
-                    throw new NopException(string.Format("Exchange rate not found for currency [{0}]", targetCurrencyCode.Name));
+                    throw new NileException(string.Format("Exchange rate not found for currency [{0}]", targetCurrencyCode.Name));
                 result = result * exchangeRate;
             }
             return result;
@@ -286,7 +286,7 @@ namespace Nop.Services.Directory
             {
                 decimal exchangeRate = sourceCurrencyCode.Rate;
                 if (exchangeRate == decimal.Zero)
-                    throw new NopException(string.Format("Exchange rate not found for currency [{0}]", sourceCurrencyCode.Name));
+                    throw new NileException(string.Format("Exchange rate not found for currency [{0}]", sourceCurrencyCode.Name));
                 result = result / exchangeRate;
             }
             return result;

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Nop.Core.Infrastructure;
+using Nile.Core.Infrastructure;
 
-namespace Nop.Services.Events
+namespace Nile.Services.Events
 {
     /// <summary>
     /// Event subscrption service

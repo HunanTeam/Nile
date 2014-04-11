@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Nop.Core.Domain.Topics;
+using Nile.Core.Domain.Topics;
 
-namespace Nop.Services.Topics
+namespace Nile.Services.Topics
 {
     /// <summary>
     /// Topic service interface

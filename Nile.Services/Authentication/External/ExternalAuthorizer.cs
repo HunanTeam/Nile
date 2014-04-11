@@ -1,17 +1,17 @@
 //Contributor:  Nicholas Mayne
 
 using System;
-using Nop.Core;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Localization;
-using Nop.Services.Common;
-using Nop.Services.Customers;
-using Nop.Services.Localization;
-using Nop.Services.Logging;
-using Nop.Services.Messages;
-using Nop.Services.Orders;
+using Nile.Core;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Localization;
+using Nile.Services.Common;
+using Nile.Services.Customers;
+using Nile.Services.Localization;
+using Nile.Services.Logging;
+using Nile.Services.Messages;
+using Nile.Services.Orders;
 
-namespace Nop.Services.Authentication.External
+namespace Nile.Services.Authentication.External
 {
     public partial class ExternalAuthorizer : IExternalAuthorizer
     {

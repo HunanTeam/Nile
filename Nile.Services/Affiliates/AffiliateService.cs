@@ -1,11 +1,11 @@
 using System;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Data;
-using Nop.Core.Domain.Affiliates;
-using Nop.Services.Events;
+using Nile.Core;
+using Nile.Core.Data;
+using Nile.Core.Domain.Affiliates;
+using Nile.Services.Events;
 
-namespace Nop.Services.Affiliates
+namespace Nile.Services.Affiliates
 {
     /// <summary>
     /// Affiliate service

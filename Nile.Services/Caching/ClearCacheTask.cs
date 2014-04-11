@@ -1,7 +1,7 @@
-﻿using Nop.Core.Caching;
-using Nop.Services.Tasks;
+﻿using Nile.Core.Caching;
+using Nile.Services.Tasks;
 
-namespace Nop.Services.Caching
+namespace Nile.Services.Caching
 {
     /// <summary>
     /// Clear cache schedueled task implementation

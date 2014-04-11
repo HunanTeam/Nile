@@ -5,19 +5,19 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Xml;
-using Nop.Core;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Orders;
-using Nop.Services.Catalog;
-using Nop.Services.Common;
-using Nop.Services.Media;
-using Nop.Services.Messages;
-using Nop.Services.Seo;
+using Nile.Core;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Orders;
+using Nile.Services.Catalog;
+using Nile.Services.Common;
+using Nile.Services.Media;
+using Nile.Services.Messages;
+using Nile.Services.Seo;
 using OfficeOpenXml;
 using OfficeOpenXml.Style;
 
-namespace Nop.Services.ExportImport
+namespace Nile.Services.ExportImport
 {
     /// <summary>
     /// Export manager
@@ -125,7 +125,7 @@ namespace Nop.Services.ExportImport
             var xmlWriter = new XmlTextWriter(stringWriter);
             xmlWriter.WriteStartDocument();
             xmlWriter.WriteStartElement("Manufacturers");
-            xmlWriter.WriteAttributeString("Version", NopVersion.CurrentVersion);
+            xmlWriter.WriteAttributeString("Version", Nile.Core.Version.CurrentVersion);
 
             foreach (var manufacturer in manufacturers)
             {
@@ -191,7 +191,7 @@ namespace Nop.Services.ExportImport
             var xmlWriter = new XmlTextWriter(stringWriter);
             xmlWriter.WriteStartDocument();
             xmlWriter.WriteStartElement("Categories");
-            xmlWriter.WriteAttributeString("Version", NopVersion.CurrentVersion);
+            xmlWriter.WriteAttributeString("Version", Nile.Core.Version.CurrentVersion);
             WriteCategories(xmlWriter, 0);
             xmlWriter.WriteEndElement();
             xmlWriter.WriteEndDocument();
@@ -211,7 +211,7 @@ namespace Nop.Services.ExportImport
             var xmlWriter = new XmlTextWriter(stringWriter);
             xmlWriter.WriteStartDocument();
             xmlWriter.WriteStartElement("Products");
-            xmlWriter.WriteAttributeString("Version", NopVersion.CurrentVersion);
+            xmlWriter.WriteAttributeString("Version", Nile.Core.Version.CurrentVersion);
 
             foreach (var product in products)
             {
@@ -888,7 +888,7 @@ namespace Nop.Services.ExportImport
             var xmlWriter = new XmlTextWriter(stringWriter);
             xmlWriter.WriteStartDocument();
             xmlWriter.WriteStartElement("Orders");
-            xmlWriter.WriteAttributeString("Version", NopVersion.CurrentVersion);
+            xmlWriter.WriteAttributeString("Version", Nile.Core.Version.CurrentVersion);
 
 
             foreach (var order in orders)
@@ -1525,7 +1525,7 @@ namespace Nop.Services.ExportImport
             var xmlWriter = new XmlTextWriter(stringWriter);
             xmlWriter.WriteStartDocument();
             xmlWriter.WriteStartElement("Customers");
-            xmlWriter.WriteAttributeString("Version", NopVersion.CurrentVersion);
+            xmlWriter.WriteAttributeString("Version", Nile.Core.Version.CurrentVersion);
 
             foreach (var customer in customers)
             {

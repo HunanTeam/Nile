@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Nop.Core;
-using Nop.Core.Domain.Stores;
+using Nile.Core;
+using Nile.Core.Domain.Stores;
 
-namespace Nop.Services.Stores
+namespace Nile.Services.Stores
 {
     /// <summary>
     /// Store mapping service interface

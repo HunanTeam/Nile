@@ -1,5 +1,5 @@
 
-namespace Nop.Services.Installation
+namespace Nile.Services.Installation
 {
     public partial interface IInstallationService
     {

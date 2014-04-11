@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using Nop.Core;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Orders;
+using Nile.Core;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Orders;
 
-namespace Nop.Services.Customers
+namespace Nile.Services.Customers
 {
     /// <summary>
     /// Customer service interface

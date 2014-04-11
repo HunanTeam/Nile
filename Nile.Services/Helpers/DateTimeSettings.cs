@@ -1,7 +1,7 @@
 ﻿
-using Nop.Core.Configuration;
+using Nile.Core.Configuration;
 
-namespace Nop.Services.Helpers
+namespace Nile.Services.Helpers
 {
     public class DateTimeSettings : ISettings
     {

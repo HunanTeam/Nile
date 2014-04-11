@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
-using Nop.Core.Domain.Catalog;
-using Nop.Core.Domain.Media;
-using Nop.Services.Localization;
-using Nop.Services.Media;
-using Nop.Services.Seo;
-using Nop.Services.Stores;
+using Nile.Core.Domain.Catalog;
+using Nile.Core.Domain.Media;
+using Nile.Services.Localization;
+using Nile.Services.Media;
+using Nile.Services.Seo;
+using Nile.Services.Stores;
 
-namespace Nop.Services.Catalog
+namespace Nile.Services.Catalog
 {
     /// <summary>
     /// Copy Product service

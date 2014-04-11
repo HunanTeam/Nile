@@ -1,8 +1,8 @@
 using System.Web.Routing;
-using Nop.Core.Plugins;
-using Nop.Services.Shipping.Tracking;
+using Nile.Core.Plugins;
+using Nile.Services.Shipping.Tracking;
 
-namespace Nop.Services.Shipping
+namespace Nile.Services.Shipping
 {
     /// <summary>
     /// Provides an interface of shipping rate computation method

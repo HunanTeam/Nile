@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Caching;
-using Nop.Core.Data;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Discounts;
-using Nop.Core.Plugins;
-using Nop.Services.Common;
-using Nop.Services.Events;
+using Nile.Core;
+using Nile.Core.Caching;
+using Nile.Core.Data;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Discounts;
+using Nile.Core.Plugins;
+using Nile.Services.Common;
+using Nile.Services.Events;
 
-namespace Nop.Services.Discounts
+namespace Nile.Services.Discounts
 {
     /// <summary>
     /// Discount service

@@ -1,11 +1,11 @@
 using System;
 using System.Linq;
-using Nop.Core;
-using Nop.Core.Data;
-using Nop.Core.Domain.Vendors;
-using Nop.Services.Events;
+using Nile.Core;
+using Nile.Core.Data;
+using Nile.Core.Domain.Vendors;
+using Nile.Services.Events;
 
-namespace Nop.Services.Vendors
+namespace Nile.Services.Vendors
 {
     /// <summary>
     /// Vendor service

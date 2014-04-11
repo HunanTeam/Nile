@@ -1,5 +1,5 @@
 
-namespace Nop.Services.Seo
+namespace Nile.Services.Seo
 {
     /// <summary>
     /// Represents a sitemap update frequency

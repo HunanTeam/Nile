@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using Nop.Core.Domain.Discounts;
+using Nile.Core.Domain.Discounts;
 
-namespace Nop.Services.Discounts
+namespace Nile.Services.Discounts
 {
     public static class DiscountExtensions
     {

@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mail;
-using Nop.Core;
-using Nop.Core.Data;
-using Nop.Core.Domain.Messages;
-using Nop.Services.Customers;
-using Nop.Services.Events;
+using Nile.Core;
+using Nile.Core.Data;
+using Nile.Core.Domain.Messages;
+using Nile.Services.Customers;
+using Nile.Services.Events;
 
-namespace Nop.Services.Messages
+namespace Nile.Services.Messages
 {
     public partial class CampaignService : ICampaignService
     {

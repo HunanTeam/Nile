@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using Nop.Core;
-using Nop.Core.Domain.Customers;
-using Nop.Core.Domain.Forums;
+using Nile.Core;
+using Nile.Core.Domain.Customers;
+using Nile.Core.Domain.Forums;
 
-namespace Nop.Services.Forums
+namespace Nile.Services.Forums
 {
     /// <summary>
     /// Forum service interface
