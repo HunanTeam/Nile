@@ -6,9 +6,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Nile.Core.Infrastructure;
-using Nop.Services.Common;
+using Nile.Services.Common;
 
-namespace Nop.Web.Framework.Themes
+namespace Nile.Web.Framework.Themes
 {
     public abstract class ThemeableVirtualPathProviderViewEngine : VirtualPathProviderViewEngine
     {

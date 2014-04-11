@@ -3,7 +3,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Nop.Web.Framework.UI.Paging
+namespace Nile.Web.Framework.UI.Paging
 {
 	/// <summary>
 	/// A collection of objects that has been split into pages.

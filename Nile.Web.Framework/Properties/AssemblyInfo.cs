@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Nop.Web.Framework")]
+[assembly: AssemblyTitle("Nile.Web.Framework")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Nop Solutions, Ltd")]
-[assembly: AssemblyProduct("Nop.Web.Framework")]
+[assembly: AssemblyProduct("Nile.Web.Framework")]
 [assembly: AssemblyCopyright("Copyright © Nop Solutions, Ltd 2010")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

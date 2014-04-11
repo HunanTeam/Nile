@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web.Mvc;
 using Nile.Core;
 
-namespace Nop.Web.Framework.Mvc
+namespace Nile.Web.Framework.Mvc
 {
     /// <summary>
     /// This MetadataProvider adds some functionality on top of the default DataAnnotationsModelMetadataProvider.
@@ -20,7 +20,7 @@ namespace Nop.Web.Framework.Mvc
             foreach (var additionalValue in additionalValues)
             {
                 if (metadata.AdditionalValues.ContainsKey(additionalValue.Name))
-                    throw new NopException("There is already an attribute with the name of \"" + additionalValue.Name +
+                    throw new NileException("There is already an attribute with the name of \"" + additionalValue.Name +
                                            "\" on this model.");
                 metadata.AdditionalValues.Add(additionalValue.Name, additionalValue);
             }

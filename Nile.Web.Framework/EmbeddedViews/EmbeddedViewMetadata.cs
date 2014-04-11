@@ -1,6 +1,6 @@
 using System;
 
-namespace Nop.Web.Framework.EmbeddedViews
+namespace Nile.Web.Framework.EmbeddedViews
 {
     [Serializable]
     public class EmbeddedViewMetadata

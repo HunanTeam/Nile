@@ -3,7 +3,7 @@ using System.Web;
 using Nile.Core;
 using Nile.Core.Infrastructure;
 
-namespace Nop.Web.Framework
+namespace Nile.Web.Framework
 {
     /// <summary>
     /// Represents a RemotePost helper class

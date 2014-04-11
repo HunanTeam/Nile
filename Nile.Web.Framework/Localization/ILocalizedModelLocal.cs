@@ -1,4 +1,4 @@
-﻿namespace Nop.Web.Framework.Localization
+﻿namespace Nile.Web.Framework.Localization
 {
     public interface ILocalizedModelLocal
     {

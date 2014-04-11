@@ -1,7 +1,7 @@
 ﻿using System;
 using Nile.Core.Domain.Localization;
 
-namespace Nop.Web.Framework.Localization
+namespace Nile.Web.Framework.Localization
 {
 
     public static class LocalizedUrlExtenstions

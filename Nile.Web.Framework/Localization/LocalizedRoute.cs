@@ -4,7 +4,7 @@ using Nile.Core.Data;
 using Nile.Core.Domain.Localization;
 using Nile.Core.Infrastructure;
 
-namespace Nop.Web.Framework.Localization
+namespace Nile.Web.Framework.Localization
 {
     /// <summary>
     /// Provides properties and methods for defining a localized route, and for getting information about the localized route.

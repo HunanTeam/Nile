@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using Newtonsoft.Json;
 
-namespace Nop.Web.Framework.Mvc
+namespace Nile.Web.Framework.Mvc
 {
     public class NullJsonResult : JsonResult
     {

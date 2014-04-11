@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Nile.Core;
 
-namespace Nop.Web.Framework.UI.Paging
+namespace Nile.Web.Framework.UI.Paging
 {
     public abstract class BasePageableModel : IPageableModel
     {

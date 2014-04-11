@@ -1,5 +1,5 @@
 ﻿
-namespace Nop.Web.Framework.UI
+namespace Nile.Web.Framework.UI
 {
     public enum ResourceLocation
     {

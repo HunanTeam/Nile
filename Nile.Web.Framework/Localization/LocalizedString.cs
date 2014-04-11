@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web;
 
-namespace Nop.Web.Framework.Localization
+namespace Nile.Web.Framework.Localization
 {
     public class LocalizedString : MarshalByRefObject, IHtmlString
     {

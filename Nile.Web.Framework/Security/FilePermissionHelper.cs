@@ -4,7 +4,7 @@ using System.Security.AccessControl;
 using System.Security.Principal;
 using Nile.Core;
 
-namespace Nop.Web.Framework.Security
+namespace Nile.Web.Framework.Security
 {
     /// <summary>
     /// File permission helper

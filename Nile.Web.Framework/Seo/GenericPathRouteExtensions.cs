@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Nop.Web.Framework.Seo
+namespace Nile.Web.Framework.Seo
 {
     public static class GenericPathRouteExtensions
     {

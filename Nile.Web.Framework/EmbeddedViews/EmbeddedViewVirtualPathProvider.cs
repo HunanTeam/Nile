@@ -4,7 +4,7 @@ using System.Web;
 using System.Web.Caching;
 using System.Web.Hosting;
 
-namespace Nop.Web.Framework.EmbeddedViews
+namespace Nile.Web.Framework.EmbeddedViews
 {
     public class EmbeddedViewVirtualPathProvider : VirtualPathProvider
     {
@@ -22,7 +22,7 @@ namespace Nop.Web.Framework.EmbeddedViews
         {
             /*old validation
             it can cause issue if we have several views with the same full path:
-            for example: both Nop.Plugin.Plugin1 and Nop.Plugin.Plugin2 can have Views\Config\Configure.cshtml files
+            for example: both Nile.Plugin.Plugin1 and Nile.Plugin.Plugin2 can have Views\Config\Configure.cshtml files
             
             That's why we specify FQN for views into plugin controllers  
              */

@@ -8,9 +8,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Nile.Core.Infrastructure;
-using Nop.Services.Localization;
+using Nile.Services.Localization;
 
-namespace Nop.Web.Framework.UI.Paging
+namespace Nile.Web.Framework.UI.Paging
 {
 	/// <summary>
     /// Renders a pager component from an IPageableModel datasource.

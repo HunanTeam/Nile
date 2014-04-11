@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
 
-namespace Nop.Web.Framework.Themes
+namespace Nile.Web.Framework.Themes
 {
     public class ThemeableRazorViewEngine : ThemeableBuildManagerViewEngine
     {

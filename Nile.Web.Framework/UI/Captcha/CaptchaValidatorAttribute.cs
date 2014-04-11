@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using Nile.Core.Infrastructure;
 
-namespace Nop.Web.Framework.UI.Captcha
+namespace Nile.Web.Framework.UI.Captcha
 {
     public class CaptchaValidatorAttribute : ActionFilterAttribute
     {

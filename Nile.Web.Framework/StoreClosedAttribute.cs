@@ -7,7 +7,7 @@ using Nile.Core.Domain;
 using Nile.Core.Domain.Customers;
 using Nile.Core.Infrastructure;
 
-namespace Nop.Web.Framework
+namespace Nile.Web.Framework
 {
     public class StoreClosedAttribute : ActionFilterAttribute
     {
@@ -40,15 +40,15 @@ namespace Nop.Web.Framework
                 return;
 
             if (//ensure it's not the Login page
-                !(controllerName.Equals("Nop.Web.Controllers.CustomerController", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("Login", StringComparison.InvariantCultureIgnoreCase)) &&
+                !(controllerName.Equals("Nile.Web.Controllers.CustomerController", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("Login", StringComparison.InvariantCultureIgnoreCase)) &&
                 //ensure it's not the Logout page
-                !(controllerName.Equals("Nop.Web.Controllers.CustomerController", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("Logout", StringComparison.InvariantCultureIgnoreCase)) &&
+                !(controllerName.Equals("Nile.Web.Controllers.CustomerController", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("Logout", StringComparison.InvariantCultureIgnoreCase)) &&
                 //ensure it's not the method (AJAX) for accepting EU Cookie law
-                !(controllerName.Equals("Nop.Web.Controllers.CommonController", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("EuCookieLawAccept", StringComparison.InvariantCultureIgnoreCase)) &&
+                !(controllerName.Equals("Nile.Web.Controllers.CommonController", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("EuCookieLawAccept", StringComparison.InvariantCultureIgnoreCase)) &&
                 //ensure it's not the store closed page
-                !(controllerName.Equals("Nop.Web.Controllers.CommonController", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("StoreClosed", StringComparison.InvariantCultureIgnoreCase)) &&
+                !(controllerName.Equals("Nile.Web.Controllers.CommonController", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("StoreClosed", StringComparison.InvariantCultureIgnoreCase)) &&
                 //ensure it's not the change language page (request)
-                !(controllerName.Equals("Nop.Web.Controllers.CommonController", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("SetLanguage", StringComparison.InvariantCultureIgnoreCase)))
+                !(controllerName.Equals("Nile.Web.Controllers.CommonController", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("SetLanguage", StringComparison.InvariantCultureIgnoreCase)))
             {
                 if (storeInformationSettings.StoreClosedAllowForAdmins && EngineContext.Current.Resolve<IWorkContext>().CurrentCustomer.IsAdmin())
                 {

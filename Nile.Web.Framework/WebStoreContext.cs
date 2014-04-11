@@ -2,9 +2,9 @@
 using System.Linq;
 using Nile.Core;
 using Nile.Core.Domain.Stores;
-using Nop.Services.Stores;
+using Nile.Services.Stores;
 
-namespace Nop.Web.Framework
+namespace Nile.Web.Framework
 {
     /// <summary>
     /// Store context for web application

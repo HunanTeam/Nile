@@ -3,7 +3,7 @@ using System.Web.Mvc;
 using System.Web.UI;
 using Nile.Core.Infrastructure;
 
-namespace Nop.Web.Framework.UI.Captcha
+namespace Nile.Web.Framework.UI.Captcha
 {
     public static class HtmlExtensions
     {

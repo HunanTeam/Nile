@@ -7,9 +7,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using Nile.Core.Domain.Seo;
-using Nop.Services.Seo;
+using Nile.Services.Seo;
 
-namespace Nop.Web.Framework.UI
+namespace Nile.Web.Framework.UI
 {
     public partial class PageHeadBuilder : IPageHeadBuilder
     {

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using Nile.Core.Infrastructure;
-using Nop.Services.Security;
+using Nile.Services.Security;
 
-namespace Nop.Web.Framework.Controllers
+namespace Nile.Web.Framework.Controllers
 {
     [AttributeUsage(AttributeTargets.Method | AttributeTargets.Class, Inherited=true, AllowMultiple=true)]
     public class AdminAuthorizeAttribute : FilterAttribute, IAuthorizationFilter

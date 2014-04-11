@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Web;
 
-namespace Nop.Web.Framework
+namespace Nile.Web.Framework
 {
     public interface IStatefulStorage
     {

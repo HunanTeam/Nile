@@ -5,7 +5,7 @@ using Nile.Core;
 using Nile.Core.Domain.Security;
 using Nile.Core.Infrastructure;
 
-namespace Nop.Web.Framework.Security
+namespace Nile.Web.Framework.Security
 {
     public class AdminValidateIpAddressAttribute : ActionFilterAttribute
     {

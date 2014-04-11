@@ -3,11 +3,11 @@ using System.Web.Routing;
 using Nile.Core;
 using Nile.Core.Data;
 using Nile.Core.Infrastructure;
-using Nop.Services.Events;
-using Nop.Services.Seo;
-using Nop.Web.Framework.Localization;
+using Nile.Services.Events;
+using Nile.Services.Seo;
+using Nile.Web.Framework.Localization;
 
-namespace Nop.Web.Framework.Seo
+namespace Nile.Web.Framework.Seo
 {
     /// <summary>
     /// Provides properties and methods for defining a SEO friendly route, and for getting information about the route.

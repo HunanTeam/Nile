@@ -7,13 +7,13 @@ using System.Web.WebPages;
 using Nile.Core;
 using Nile.Core.Data;
 using Nile.Core.Infrastructure;
-using Nop.Services.Localization;
-using Nop.Web.Framework.Localization;
-using Nop.Web.Framework.Themes;
+using Nile.Services.Localization;
+using Nile.Web.Framework.Localization;
+using Nile.Web.Framework.Themes;
 
 #endregion
 
-namespace Nop.Web.Framework.ViewEngines.Razor
+namespace Nile.Web.Framework.ViewEngines.Razor
 {
     public abstract class WebViewPage<TModel> : System.Web.Mvc.WebViewPage<TModel>
     {
@@ -146,7 +146,7 @@ namespace Nop.Web.Framework.ViewEngines.Razor
             //keep this method synchornized with
             //"SetSelectedTabIndex" method of \Administration\Controllers\BaseNopController.cs
             int index = 0;
-            string dataKey = "nop.selected-tab-index";
+            string dataKey = "Nile.selected-tab-index";
             if (ViewData[dataKey] is int)
             {
                 index = (int)ViewData[dataKey];

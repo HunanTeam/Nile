@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace Nop.Web.Framework
+namespace Nile.Web.Framework
 {
     public static class UrlHelperExtensions
     {

@@ -5,9 +5,9 @@ using Nile.Core;
 using Nile.Core.Data;
 using Nile.Core.Domain.Localization;
 using Nile.Core.Infrastructure;
-using Nop.Web.Framework.Localization;
+using Nile.Web.Framework.Localization;
 
-namespace Nop.Web.Framework
+namespace Nile.Web.Framework
 {
     /// <summary>
     /// Attribute which ensures that store URL contains a language SEO code if "SEO friendly URLs with multiple languages" setting is enabled

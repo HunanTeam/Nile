@@ -1,7 +1,7 @@
 ﻿using Nile.Core.Plugins;
-using Nop.Web.Framework.Menu;
+using Nile.Web.Framework.Menu;
 
-namespace Nop.Web.Framework.Web
+namespace Nile.Web.Framework.Web
 {
     public interface IAdminMenuPlugin : IPlugin
     {

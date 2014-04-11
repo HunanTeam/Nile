@@ -5,12 +5,12 @@ using System.Web.Mvc;
 using Nile.Core;
 using Nile.Core.Domain.Customers;
 using Nile.Core.Infrastructure;
-using Nop.Services.Common;
-using Nop.Services.Logging;
-using Nop.Services.Stores;
-using Nop.Web.Framework.UI;
+using Nile.Services.Common;
+using Nile.Services.Logging;
+using Nile.Services.Stores;
+using Nile.Web.Framework.UI;
 
-namespace Nop.Web.Framework.Controllers
+namespace Nile.Web.Framework.Controllers
 {
     /// <summary>
     /// Base controller
@@ -140,7 +140,7 @@ namespace Nop.Web.Framework.Controllers
         /// <param name="persistForTheNextRequest">A value indicating whether a message should be persisted for the next request</param>
         protected virtual void AddNotification(NotifyType type, string message, bool persistForTheNextRequest)
         {
-            string dataKey = string.Format("nop.notifications.{0}", type);
+            string dataKey = string.Format("Nile.notifications.{0}", type);
             if (persistForTheNextRequest)
             {
                 if (TempData[dataKey] == null)

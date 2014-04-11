@@ -3,9 +3,9 @@ using System.Web.Mvc;
 using Nile.Core;
 using Nile.Core.Data;
 using Nile.Core.Infrastructure;
-using Nop.Services.Customers;
+using Nile.Services.Customers;
 
-namespace Nop.Web.Framework
+namespace Nile.Web.Framework
 {
     public class CustomerLastActivityAttribute : ActionFilterAttribute
     {

@@ -8,16 +8,16 @@ using Nile.Core.Domain.Localization;
 using Nile.Core.Domain.Tax;
 using Nile.Core.Domain.Vendors;
 using Nile.Core.Fakes;
-using Nop.Services.Authentication;
-using Nop.Services.Common;
-using Nop.Services.Customers;
-using Nop.Services.Directory;
-using Nop.Services.Localization;
-using Nop.Services.Stores;
-using Nop.Services.Vendors;
-using Nop.Web.Framework.Localization;
+using Nile.Services.Authentication;
+using Nile.Services.Common;
+using Nile.Services.Customers;
+using Nile.Services.Directory;
+using Nile.Services.Localization;
+using Nile.Services.Stores;
+using Nile.Services.Vendors;
+using Nile.Web.Framework.Localization;
 
-namespace Nop.Web.Framework
+namespace Nile.Web.Framework
 {
     /// <summary>
     /// Work context for web application
@@ -26,7 +26,7 @@ namespace Nop.Web.Framework
     {
         #region Const
 
-        private const string CustomerCookieName = "Nop.customer";
+        private const string CustomerCookieName = "Nile.customer";
 
         #endregion
 

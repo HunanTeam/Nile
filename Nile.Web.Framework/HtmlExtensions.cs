@@ -10,11 +10,11 @@ using System.Web.Mvc.Html;
 using System.Web.WebPages;
 using Nile.Core;
 using Nile.Core.Infrastructure;
-using Nop.Services.Localization;
-using Nop.Web.Framework.Localization;
-using Nop.Web.Framework.Mvc;
+using Nile.Services.Localization;
+using Nile.Web.Framework.Localization;
+using Nile.Web.Framework.Mvc;
 
-namespace Nop.Web.Framework
+namespace Nile.Web.Framework
 {
     public static class HtmlExtensions
     {

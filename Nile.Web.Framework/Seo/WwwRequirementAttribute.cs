@@ -5,7 +5,7 @@ using Nile.Core.Data;
 using Nile.Core.Domain.Seo;
 using Nile.Core.Infrastructure;
 
-namespace Nop.Web.Framework.Seo
+namespace Nile.Web.Framework.Seo
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, Inherited = true, AllowMultiple = false)]
     public class WwwRequirementAttribute : FilterAttribute, IAuthorizationFilter
@@ -86,7 +86,7 @@ namespace Nop.Web.Framework.Seo
                 }
                 break;
                 default:
-                    throw new NopException("Not supported WwwRequirement parameter");
+                throw new NileException("Not supported WwwRequirement parameter");
             }
         }
     }

@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using Nile.Core.Infrastructure;
 
-namespace Nop.Web.Framework.UI
+namespace Nile.Web.Framework.UI
 {
     public static class LayoutExtensions
     {

@@ -3,7 +3,7 @@ using FluentValidation;
 using FluentValidation.Attributes;
 using Nile.Core.Infrastructure;
 
-namespace Nop.Web.Framework
+namespace Nile.Web.Framework
 {
     public class NopValidatorFactory : AttributedValidatorFactory
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
 
-namespace Nop.Web.Framework.Mvc
+namespace Nile.Web.Framework.Mvc
 {
     /// <summary>
     /// Base nopCommerce model

@@ -6,7 +6,7 @@ using System.Xml;
 using Nile.Core;
 using Nile.Core.Configuration;
 
-namespace Nop.Web.Framework.Themes
+namespace Nile.Web.Framework.Themes
 {
     public partial class ThemeProvider : IThemeProvider
     {
@@ -19,9 +19,9 @@ namespace Nop.Web.Framework.Themes
 
 		#region Constructors
 
-        public ThemeProvider(NopConfig nopConfig, IWebHelper webHelper)
+        public ThemeProvider(NileConfig config, IWebHelper webHelper)
         {
-            basePath = webHelper.MapPath(nopConfig.ThemeBasePath);
+            basePath = webHelper.MapPath(config.ThemeBasePath);
             LoadConfigurations();
         }
 

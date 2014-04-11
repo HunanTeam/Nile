@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 
-namespace Nop.Web.Framework.Kendoui
+namespace Nile.Web.Framework.Kendoui
 {
     public static class ModelStateExtensions
     {

@@ -4,9 +4,9 @@ using Nile.Core;
 using Nile.Core.Data;
 using Nile.Core.Domain.Customers;
 using Nile.Core.Infrastructure;
-using Nop.Services.Common;
+using Nile.Services.Common;
 
-namespace Nop.Web.Framework
+namespace Nile.Web.Framework
 {
     public class StoreLastVisitedPageAttribute : ActionFilterAttribute
     {

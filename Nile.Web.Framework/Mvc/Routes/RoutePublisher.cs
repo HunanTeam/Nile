@@ -5,7 +5,7 @@ using System.Web.Routing;
 using Nile.Core.Infrastructure;
 using Nile.Core.Plugins;
 
-namespace Nop.Web.Framework.Mvc.Routes
+namespace Nile.Web.Framework.Mvc.Routes
 {
     /// <summary>
     /// Route publisher

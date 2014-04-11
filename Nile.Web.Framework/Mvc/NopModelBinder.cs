@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace Nop.Web.Framework.Mvc
+namespace Nile.Web.Framework.Mvc
 {
     public class NopModelBinder : DefaultModelBinder
     {

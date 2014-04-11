@@ -1,4 +1,4 @@
-﻿namespace Nop.Web.Framework.Themes
+﻿namespace Nile.Web.Framework.Themes
 {
     /// <summary>
     /// Work context

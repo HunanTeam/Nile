@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Nop.Web.Framework.EmbeddedViews
+namespace Nile.Web.Framework.EmbeddedViews
 {
     [Serializable]
     public class EmbeddedViewTable

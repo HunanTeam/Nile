@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Nop.Web.Framework.Localization
+namespace Nile.Web.Framework.Localization
 {
     public interface ILocalizedModel
     {

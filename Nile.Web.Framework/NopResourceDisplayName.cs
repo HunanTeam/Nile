@@ -1,9 +1,9 @@
 ﻿using Nile.Core;
 using Nile.Core.Infrastructure;
-using Nop.Services.Localization;
-using Nop.Web.Framework.Mvc;
+using Nile.Services.Localization;
+using Nile.Web.Framework.Mvc;
 
-namespace Nop.Web.Framework
+namespace Nile.Web.Framework
 {
     public class NopResourceDisplayName : System.ComponentModel.DisplayNameAttribute, IModelAttribute
     {

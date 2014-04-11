@@ -6,10 +6,10 @@ using System.Web.Routing;
 using System.Xml;
 using Nile.Core;
 using Nile.Core.Infrastructure;
-using Nop.Services.Localization;
-using Nop.Services.Security;
+using Nile.Services.Localization;
+using Nile.Services.Security;
 
-namespace Nop.Web.Framework.Menu
+namespace Nile.Web.Framework.Menu
 {
     public class XmlSiteMap
     {

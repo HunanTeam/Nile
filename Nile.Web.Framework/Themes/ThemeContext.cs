@@ -3,9 +3,9 @@ using System.Linq;
 using Nile.Core;
 using Nile.Core.Domain;
 using Nile.Core.Domain.Customers;
-using Nop.Services.Common;
+using Nile.Services.Common;
 
-namespace Nop.Web.Framework.Themes
+namespace Nile.Web.Framework.Themes
 {
     /// <summary>
     /// Theme context

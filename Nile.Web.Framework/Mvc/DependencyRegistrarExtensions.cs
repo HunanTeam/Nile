@@ -5,7 +5,7 @@ using Nile.Core.Data;
 using Nile.Core.Infrastructure.DependencyManagement;
 using Nile.Data;
 
-namespace Nop.Web.Framework.Mvc
+namespace Nile.Web.Framework.Mvc
 {
     /// <summary>
     /// Extensions for DependencyRegistrar

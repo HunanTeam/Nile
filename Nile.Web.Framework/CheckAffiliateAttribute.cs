@@ -3,10 +3,10 @@ using System.Web;
 using System.Web.Mvc;
 using Nile.Core;
 using Nile.Core.Infrastructure;
-using Nop.Services.Affiliates;
-using Nop.Services.Customers;
+using Nile.Services.Affiliates;
+using Nile.Services.Customers;
 
-namespace Nop.Web.Framework
+namespace Nile.Web.Framework
 {
     public class CheckAffiliateAttribute : ActionFilterAttribute
     {

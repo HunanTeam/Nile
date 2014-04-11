@@ -1,7 +1,7 @@
 ﻿
 using Nile.Core.Configuration;
 
-namespace Nop.Web.Framework.UI.Captcha
+namespace Nile.Web.Framework.UI.Captcha
 {
     public class CaptchaSettings : ISettings
     {

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
-using Nop.Services.Payments;
+using Nile.Services.Payments;
 
-namespace Nop.Web.Framework.Controllers
+namespace Nile.Web.Framework.Controllers
 {
     /// <summary>
     /// Base controller for payment plugins

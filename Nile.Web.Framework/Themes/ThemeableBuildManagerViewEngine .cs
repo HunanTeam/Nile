@@ -1,7 +1,7 @@
 ﻿using System.Web.Compilation;
 using System.Web.Mvc;
 
-namespace Nop.Web.Framework.Themes
+namespace Nile.Web.Framework.Themes
 {
     public abstract class ThemeableBuildManagerViewEngine : ThemeableVirtualPathProviderViewEngine
     {

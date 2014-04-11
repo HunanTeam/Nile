@@ -1,7 +1,7 @@
 using System.Reflection;
 using Nile.Core.Infrastructure;
 
-namespace Nop.Web.Framework.EmbeddedViews
+namespace Nile.Web.Framework.EmbeddedViews
 {
     public class EmbeddedViewResolver : IEmbeddedViewResolver
     {

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Web.Mvc;
 using Nile.Core;
 using Nile.Core.Infrastructure;
-using Nop.Services.Helpers;
-using Nop.Services.Localization;
-using Nop.Web.Framework.Kendoui;
+using Nile.Services.Helpers;
+using Nile.Services.Localization;
+using Nile.Web.Framework.Kendoui;
 
-namespace Nop.Web.Framework
+namespace Nile.Web.Framework
 {
     /// <summary>
     /// Extensions

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Web.Hosting;
 
-namespace Nop.Web.Framework.EmbeddedViews
+namespace Nile.Web.Framework.EmbeddedViews
 {
     public class EmbeddedResourceVirtualFile : VirtualFile
     {

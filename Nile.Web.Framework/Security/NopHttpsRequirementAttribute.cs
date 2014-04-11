@@ -5,7 +5,7 @@ using Nile.Core.Data;
 using Nile.Core.Domain.Security;
 using Nile.Core.Infrastructure;
 
-namespace Nop.Web.Framework.Security
+namespace Nile.Web.Framework.Security
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, Inherited = true, AllowMultiple = false)]
     public class NopHttpsRequirementAttribute : FilterAttribute, IAuthorizationFilter
@@ -73,7 +73,7 @@ namespace Nop.Web.Framework.Security
                     }
                     break;
                 default:
-                    throw new NopException("Not supported SslProtected parameter");
+                    throw new NileException("Not supported SslProtected parameter");
             }
         }
 
