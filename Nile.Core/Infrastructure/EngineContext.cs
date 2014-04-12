@@ -19,7 +19,7 @@ namespace Nile.Core.Infrastructure
         {
             if (Singleton<IEngine>.Instance == null || forceRecreate)
             {
-                var config = ConfigurationManager.GetSection("NopConfig") as NileConfig;
+                var config = ConfigurationManager.GetSection("NileConfig") as NileConfig;
                 Debug.WriteLine("Constructing engine " + DateTime.Now);
                 Singleton<IEngine>.Instance = CreateEngineInstance(config);
                 Debug.WriteLine("Initializing engine " + DateTime.Now);

@@ -6,6 +6,10 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Web.WebPages;
+using Nile.Core.Infrastructure;
+using Nile.Web.Framework.Mvc;
+using Nile.Web.Framework.Themes;
 
 namespace Nile.Web
 {
@@ -16,7 +20,24 @@ namespace Nile.Web
     {
         protected void Application_Start()
         {
+            var mobileDisplayMode = DisplayModeProvider.Instance.Modes
+            .FirstOrDefault(x => x.DisplayModeId == DisplayModeProvider.MobileDisplayModeId);
+            if (mobileDisplayMode != null)
+                DisplayModeProvider.Instance.Modes.Remove(mobileDisplayMode);
+
+
+            //initialize engine context
+            EngineContext.Initialize(false);
+
+            var dependencyResolver = new NopDependencyResolver();
+            DependencyResolver.SetResolver(dependencyResolver);
+            //remove all view engines
+            ViewEngines.Engines.Clear();
+            //except the themeable razor view engine we use
+            ViewEngines.Engines.Add(new ThemeableRazorViewEngine());
             AreaRegistration.RegisterAllAreas();
+
+         
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

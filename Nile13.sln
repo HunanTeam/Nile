@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nile.Web", "Nile.Web\Nile.Web.csproj", "{070FAFA2-C474-4892-8A03-D59CA4B6EDBA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nile.Core", "Nile.Core\Nile.Core.csproj", "{5B9BB1ED-0F7B-444E-A6B6-78289B216DA4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nile.Web.Framework", "Nile.Web.Framework\Nile.Web.Framework.csproj", "{CF61A0DB-E5D1-4930-9996-34B48ACE8065}"
@@ -21,7 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{937A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nile.Core.Domain", "Nile.Core.Domain\Nile.Core.Domain.csproj", "{170CE5BF-14E6-4549-96BA-3E2FF81645AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nile.Admin", "Nile.Web\Admin\Nile.Admin.csproj", "{1A8F6E55-13A9-433F-A3E3-275CD363BA7A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nile.Web", "Nile.Web\Nile.Web.csproj", "{B1B465F1-AEB4-4BEC-BBFB-94E5278F5081}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nile.Admin", "Nile.Web\Admin\Nile.Admin\Nile.Admin.csproj", "{474EEFCD-0454-419D-8F23-DC783524CEA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{070FAFA2-C474-4892-8A03-D59CA4B6EDBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{070FAFA2-C474-4892-8A03-D59CA4B6EDBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{070FAFA2-C474-4892-8A03-D59CA4B6EDBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{070FAFA2-C474-4892-8A03-D59CA4B6EDBA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B9BB1ED-0F7B-444E-A6B6-78289B216DA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5B9BB1ED-0F7B-444E-A6B6-78289B216DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B9BB1ED-0F7B-444E-A6B6-78289B216DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -53,18 +49,20 @@ Global
 		{170CE5BF-14E6-4549-96BA-3E2FF81645AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{170CE5BF-14E6-4549-96BA-3E2FF81645AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{170CE5BF-14E6-4549-96BA-3E2FF81645AB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1A8F6E55-13A9-433F-A3E3-275CD363BA7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A8F6E55-13A9-433F-A3E3-275CD363BA7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A8F6E55-13A9-433F-A3E3-275CD363BA7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1A8F6E55-13A9-433F-A3E3-275CD363BA7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1B465F1-AEB4-4BEC-BBFB-94E5278F5081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1B465F1-AEB4-4BEC-BBFB-94E5278F5081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1B465F1-AEB4-4BEC-BBFB-94E5278F5081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1B465F1-AEB4-4BEC-BBFB-94E5278F5081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{474EEFCD-0454-419D-8F23-DC783524CEA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{474EEFCD-0454-419D-8F23-DC783524CEA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{474EEFCD-0454-419D-8F23-DC783524CEA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{474EEFCD-0454-419D-8F23-DC783524CEA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CF61A0DB-E5D1-4930-9996-34B48ACE8065} = {CD9AF5E2-E9B7-41D7-97EE-0A0BD7CC77F7}
-		{070FAFA2-C474-4892-8A03-D59CA4B6EDBA} = {CD9AF5E2-E9B7-41D7-97EE-0A0BD7CC77F7}
-		{1A8F6E55-13A9-433F-A3E3-275CD363BA7A} = {CD9AF5E2-E9B7-41D7-97EE-0A0BD7CC77F7}
 		{5B9BB1ED-0F7B-444E-A6B6-78289B216DA4} = {B675662B-9800-4159-AEB3-D0FB532B78B5}
 		{A78FD4C3-C5B3-4DB9-9322-C7E445C53BB3} = {B675662B-9800-4159-AEB3-D0FB532B78B5}
 		{30374AEB-3913-448D-8579-95F5C13651BB} = {B675662B-9800-4159-AEB3-D0FB532B78B5}

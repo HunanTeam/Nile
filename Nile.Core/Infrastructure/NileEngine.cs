@@ -28,7 +28,7 @@ namespace Nile.Core.Infrastructure
 
 		public NileEngine(ContainerConfigurer configurer)
 		{
-            var config = ConfigurationManager.GetSection("NopConfig") as NileConfig;
+            var config = ConfigurationManager.GetSection("NileConfig") as NileConfig;
             InitializeContainer(configurer, config);
 		}
         

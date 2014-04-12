@@ -134,6 +134,7 @@ namespace Nile.Core.Infrastructure
                     {
                         foreach (var t in types)
                         {
+                            Debug.WriteLine(t.Name);
                             if (assignTypeFrom.IsAssignableFrom(t) || (assignTypeFrom.IsGenericTypeDefinition && DoesTypeImplementOpenGeneric(t, assignTypeFrom)))
                             {
                                 if (!t.IsInterface)

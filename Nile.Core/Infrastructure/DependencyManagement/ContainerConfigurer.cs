@@ -13,12 +13,12 @@ namespace Nile.Core.Infrastructure.DependencyManagement
         public virtual void Configure(IEngine engine, ContainerManager containerManager, NileConfig configuration)
         {
             //other dependencies
-            containerManager.AddComponentInstance<NileConfig>(configuration, "nop.configuration");
-            containerManager.AddComponentInstance<IEngine>(engine, "nop.engine");
-            containerManager.AddComponentInstance<ContainerConfigurer>(this, "nop.containerConfigurer");
+            containerManager.AddComponentInstance<NileConfig>(configuration, "nile.configuration");
+            containerManager.AddComponentInstance<IEngine>(engine, "nile.engine");
+            containerManager.AddComponentInstance<ContainerConfigurer>(this, "nile.containerConfigurer");
 
             //type finder
-            containerManager.AddComponent<ITypeFinder, WebAppTypeFinder>("nop.typeFinder");
+            containerManager.AddComponent<ITypeFinder, WebAppTypeFinder>("nile.typeFinder");
 
             //register dependencies provided by other assemblies
             var typeFinder = containerManager.Resolve<ITypeFinder>();
