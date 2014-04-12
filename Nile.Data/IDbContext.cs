@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using Nile.Core;
+using System.Collections.Generic;
 using System.Data.Entity;
-using Nile.Core;
 
 namespace Nile.Data
 {

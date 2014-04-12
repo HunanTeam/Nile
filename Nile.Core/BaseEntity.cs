@@ -17,12 +17,12 @@ namespace Nile.Core
             return Equals(obj as BaseEntity);
         }
 
-        private static bool IsTransient(BaseEntity obj)
+        protected static bool IsTransient(BaseEntity obj)
         {
             return obj != null && Equals(obj.Id, default(int));
         }
 
-        private Type GetUnproxiedType()
+        protected Type GetUnproxiedType()
         {
             return GetType();
         }

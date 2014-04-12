@@ -1,5 +1,6 @@
 using System;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Data.Entity.Validation;
 using System.Linq;
 using Nile.Core;
@@ -26,6 +27,7 @@ namespace Nile.Data
 
         public virtual T GetById(object id)
         {
+            
             return this.Entities.Find(id);
         }
 

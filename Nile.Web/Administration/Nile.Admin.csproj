@@ -197,10 +197,6 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Nile.Core.Domain\Nile.Core.Domain.csproj">
-      <Project>{170ce5bf-14e6-4549-96ba-3e2ff81645ab}</Project>
-      <Name>Nile.Core.Domain</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Nile.Core\Nile.Core.csproj">
       <Project>{5b9bb1ed-0f7b-444e-a6b6-78289b216da4}</Project>
       <Name>Nile.Core</Name>
