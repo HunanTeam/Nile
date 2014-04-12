@@ -39,6 +39,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=3.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Autofac.3.1.0\lib\net40\Autofac.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -117,6 +121,7 @@
     <Compile Include="Controllers\BaseAdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="HtmlExtensions.cs" />
+    <Compile Include="Infrastructure\DependencyRegistrar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -139,23 +144,23 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Nile.Core.Domain\Nile.Core.Domain.csproj">
+    <ProjectReference Include="..\..\Nile.Core.Domain\Nile.Core.Domain.csproj">
       <Project>{170ce5bf-14e6-4549-96ba-3e2ff81645ab}</Project>
       <Name>Nile.Core.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Nile.Core\Nile.Core.csproj">
+    <ProjectReference Include="..\..\Nile.Core\Nile.Core.csproj">
       <Project>{5b9bb1ed-0f7b-444e-a6b6-78289b216da4}</Project>
       <Name>Nile.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Nile.Data\Nile.Data.csproj">
+    <ProjectReference Include="..\..\Nile.Data\Nile.Data.csproj">
       <Project>{30374aeb-3913-448d-8579-95f5c13651bb}</Project>
       <Name>Nile.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Nile.Services\Nile.Services.csproj">
+    <ProjectReference Include="..\..\Nile.Services\Nile.Services.csproj">
       <Project>{a78fd4c3-c5b3-4db9-9322-c7e445c53bb3}</Project>
       <Name>Nile.Services</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Nile.Web.Framework\Nile.Web.Framework.csproj">
+    <ProjectReference Include="..\..\Nile.Web.Framework\Nile.Web.Framework.csproj">
       <Project>{cf61a0db-e5d1-4930-9996-34b48ace8065}</Project>
       <Name>Nile.Web.Framework</Name>
     </ProjectReference>

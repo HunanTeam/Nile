@@ -29,12 +29,17 @@ namespace Nile.Web
             //initialize engine context
             EngineContext.Initialize(false);
 
+
             var dependencyResolver = new NopDependencyResolver();
             DependencyResolver.SetResolver(dependencyResolver);
+
             //remove all view engines
             ViewEngines.Engines.Clear();
             //except the themeable razor view engine we use
             ViewEngines.Engines.Add(new ThemeableRazorViewEngine());
+
+            ModelMetadataProviders.Current = new NopMetadataProvider();
+
             AreaRegistration.RegisterAllAreas();
 
          
@@ -42,7 +47,13 @@ namespace Nile.Web
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+        protected void Application_AuthenticateRequest(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 }
