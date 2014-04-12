@@ -7,6 +7,7 @@
 @using Nile.Core.Domain.Common;
 @using Nile.Services.Security;
 @{
+    
     var currentCustomer = this.WorkContext.CurrentCustomer;
     var usernamesEnabled = EngineContext.Current.Resolve<CustomerSettings>().UsernamesEnabled;
     var currentVersion = Nile.Core.Version.CurrentVersion;
