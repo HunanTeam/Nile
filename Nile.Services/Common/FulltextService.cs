@@ -14,7 +14,7 @@ namespace Nile.Services.Common
         #region Fields
 
         private readonly IDataProvider _dataProvider;
-        private readonly IDbContext _dbContext;
+        private readonly IEfDbContext _dbContext;
         private readonly CommonSettings _commonSettings;
         #endregion
 
@@ -26,7 +26,7 @@ namespace Nile.Services.Common
         /// <param name="dataProvider">Data provider</param>
         /// <param name="dbContext">Database Context</param>
         /// <param name="commonSettings">Common settings</param>
-        public FulltextService(IDataProvider dataProvider, IDbContext dbContext,
+        public FulltextService(IDataProvider dataProvider, IEfDbContext dbContext,
             CommonSettings commonSettings)
         {
             this._dataProvider = dataProvider;

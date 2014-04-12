@@ -103,11 +103,11 @@ namespace Nile.Web.Framework
                 var dataProvider = efDataProviderManager.LoadDataProvider();
                 dataProvider.InitConnectionFactory();
 
-                builder.Register<IDbContext>(c => new NopObjectContext(dataProviderSettings.DataConnectionString)).InstancePerHttpRequest();
+                builder.Register<IEfDbContext>(c => new NopObjectContext(dataProviderSettings.DataConnectionString)).InstancePerHttpRequest();
             }
             else
             {
-                builder.Register<IDbContext>(c => new NopObjectContext(dataSettingsManager.LoadSettings().DataConnectionString)).InstancePerHttpRequest();
+                builder.Register<IEfDbContext>(c => new NopObjectContext(dataSettingsManager.LoadSettings().DataConnectionString)).InstancePerHttpRequest();
             }
 
 

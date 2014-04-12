@@ -95,7 +95,9 @@
     <Compile Include="Data\DataSettingsHelper.cs" />
     <Compile Include="Data\DataSettingsManager.cs" />
     <Compile Include="Data\IDataProvider.cs" />
+    <Compile Include="Data\IDBContext.cs" />
     <Compile Include="Data\IRepository.cs" />
+    <Compile Include="Data\IUnitOfWork.cs" />
     <Compile Include="Domain2\Users\Address.cs" />
     <Compile Include="Domain2\Users\UserLoginInfo.cs" />
     <Compile Include="Domain2\Users\Users.cs" />

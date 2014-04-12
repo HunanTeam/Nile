@@ -38,7 +38,7 @@ namespace Nile.Services.Logging
         private readonly IRepository<ActivityLog> _activityLogRepository;
         private readonly IRepository<ActivityLogType> _activityLogTypeRepository;
         private readonly IWorkContext _workContext;
-        private readonly IDbContext _dbContext;
+        private readonly IEfDbContext _dbContext;
         private readonly IDataProvider _dataProvider;
         private readonly CommonSettings _commonSettings;
         #endregion
@@ -58,7 +58,7 @@ namespace Nile.Services.Logging
             IRepository<ActivityLog> activityLogRepository,
             IRepository<ActivityLogType> activityLogTypeRepository,
             IWorkContext workContext,
-            IDbContext dbContext, IDataProvider dataProvider, CommonSettings commonSettings)
+            IEfDbContext dbContext, IDataProvider dataProvider, CommonSettings commonSettings)
         {
             this._cacheManager = cacheManager;
             this._activityLogRepository = activityLogRepository;

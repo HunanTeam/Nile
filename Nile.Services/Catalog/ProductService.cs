@@ -54,7 +54,7 @@ namespace Nile.Services.Catalog
         private readonly ILanguageService _languageService;
         private readonly IWorkflowMessageService _workflowMessageService;
         private readonly IDataProvider _dataProvider;
-        private readonly IDbContext _dbContext;
+        private readonly IEfDbContext _dbContext;
         private readonly ICacheManager _cacheManager;
         private readonly IWorkContext _workContext;
         private readonly IStoreContext _storeContext;
@@ -109,7 +109,7 @@ namespace Nile.Services.Catalog
             ILanguageService languageService,
             IWorkflowMessageService workflowMessageService,
             IDataProvider dataProvider, 
-            IDbContext dbContext,
+            IEfDbContext dbContext,
             IWorkContext workContext,
             IStoreContext storeContext,
             LocalizationSettings localizationSettings, 

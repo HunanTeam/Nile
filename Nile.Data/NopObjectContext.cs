@@ -8,14 +8,17 @@ using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Reflection;
 using Nile.Core;
+using System.Threading;
 
 namespace Nile.Data
 {
     /// <summary>
     /// Object context
     /// </summary>
-    public class NopObjectContext : DbContext, IDbContext
+    public class NopObjectContext : DbContext, IEfDbContext
     {
+        private readonly ThreadLocal<bool> localCommitted = new ThreadLocal<bool>(() => true);
+        private readonly object sync = new object();
         #region Ctor
 
         public NopObjectContext(string nameOrConnectionString)
@@ -23,7 +26,7 @@ namespace Nile.Data
         {
             //((IObjectContextAdapter) this).ObjectContext.ContextOptions.LazyLoadingEnabled = true;
         }
-        
+
         #endregion
 
         #region Utilities
@@ -97,7 +100,7 @@ namespace Nile.Data
         {
             return base.Set<TEntity>();
         }
-        
+
         /// <summary>
         /// Execute stores procedure and load a list of entities at the end
         /// </summary>
@@ -157,7 +160,7 @@ namespace Nile.Data
         {
             return this.Database.SqlQuery<TElement>(sql, parameters);
         }
-    
+
         /// <summary>
         /// Executes the given DDL/DML command against the database.
         /// </summary>
@@ -172,8 +175,8 @@ namespace Nile.Data
             if (timeout.HasValue)
             {
                 //store previous timeout
-                previousTimeout = ((IObjectContextAdapter) this).ObjectContext.CommandTimeout;
-                ((IObjectContextAdapter) this).ObjectContext.CommandTimeout = timeout;
+                previousTimeout = ((IObjectContextAdapter)this).ObjectContext.CommandTimeout;
+                ((IObjectContextAdapter)this).ObjectContext.CommandTimeout = timeout;
             }
 
             var transactionalBehavior = doNotEnsureTransaction
@@ -184,7 +187,7 @@ namespace Nile.Data
             if (timeout.HasValue)
             {
                 //Set previous timeout back
-                ((IObjectContextAdapter) this).ObjectContext.CommandTimeout = previousTimeout;
+                ((IObjectContextAdapter)this).ObjectContext.CommandTimeout = previousTimeout;
             }
 
             //return result
@@ -192,5 +195,33 @@ namespace Nile.Data
         }
 
         #endregion
+
+        public bool DistributedTransactionSupported
+        {
+            get { return true;  }
+        }
+
+        public virtual bool Committed
+        {
+            get { return localCommitted.Value; }
+            protected set { localCommitted.Value = value; }
+        }
+
+        public void Commit()
+        {
+            if (!Committed)
+            {
+                lock (sync)
+                {
+                    this.SaveChanges();
+                }
+                Committed = true;
+            }
+        }
+
+        public void Rollback()
+        {
+            Committed = false;
+        }
     }
 }

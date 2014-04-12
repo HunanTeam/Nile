@@ -22,7 +22,7 @@ namespace Nile.Services.Installation
         private readonly IRepository<Language> _languageRepository;
         private readonly IRepository<Customer> _customerRepository;
         private readonly IRepository<Store> _storeRepository;
-        private readonly IDbContext _dbContext;
+        private readonly IEfDbContext _dbContext;
         private readonly IWebHelper _webHelper;
 
         #endregion
@@ -32,7 +32,7 @@ namespace Nile.Services.Installation
         public SqlFileInstallationService(IRepository<Language> languageRepository,
             IRepository<Customer> customerRepository, 
             IRepository<Store> storeRepository,
-            IDbContext dbContext,
+            IEfDbContext dbContext,
             IWebHelper webHelper)
         {
             this._languageRepository = languageRepository;

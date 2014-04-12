@@ -10,7 +10,7 @@ namespace Nile.Data
     {
         #region Utilities
 
-        private static T InnerGetCopy<T>(IDbContext context, T currentCopy, Func<DbEntityEntry<T>, DbPropertyValues> func) where T : BaseEntity
+        private static T InnerGetCopy<T>(IEfDbContext context, T currentCopy, Func<DbEntityEntry<T>, DbPropertyValues> func) where T : BaseEntity
         {
             //Get the database context
             DbContext dbContext = CastOrThrow(context);
@@ -46,7 +46,7 @@ namespace Nile.Data
             return dbContext.ChangeTracker.Entries<T>().FirstOrDefault(e => e.Entity == currentCopy);
         }
 
-        private static DbContext CastOrThrow(IDbContext context)
+        private static DbContext CastOrThrow(IEfDbContext context)
         {
             DbContext output = (context as DbContext);
 
@@ -69,7 +69,7 @@ namespace Nile.Data
         /// <param name="context">The context.</param>
         /// <param name="currentCopy">The current copy.</param>
         /// <returns></returns>
-        public static T LoadOriginalCopy<T>(this IDbContext context, T currentCopy) where T : BaseEntity
+        public static T LoadOriginalCopy<T>(this IEfDbContext context, T currentCopy) where T : BaseEntity
         {
             return InnerGetCopy(context, currentCopy, e => e.OriginalValues);
         }
@@ -81,7 +81,7 @@ namespace Nile.Data
         /// <param name="context">The context.</param>
         /// <param name="currentCopy">The current copy.</param>
         /// <returns></returns>
-        public static T LoadDatabaseCopy<T>(this IDbContext context, T currentCopy) where T : BaseEntity
+        public static T LoadDatabaseCopy<T>(this IEfDbContext context, T currentCopy) where T : BaseEntity
         {
             return InnerGetCopy(context, currentCopy, e => e.GetDatabaseValues());
         }

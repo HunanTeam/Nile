@@ -37,7 +37,7 @@ namespace Nile.Services.Catalog
 
         private readonly IRepository<ProductTag> _productTagRepository;
         private readonly IDataProvider _dataProvider;
-        private readonly IDbContext _dbContext;
+        private readonly IEfDbContext _dbContext;
         private readonly CommonSettings _commonSettings;
         private readonly ICacheManager _cacheManager;
         private readonly IEventPublisher _eventPublisher;
@@ -57,7 +57,7 @@ namespace Nile.Services.Catalog
         /// <param name="eventPublisher">Event published</param>
         public ProductTagService(IRepository<ProductTag> productTagRepository,
             IDataProvider dataProvider, 
-            IDbContext dbContext,
+            IEfDbContext dbContext,
             CommonSettings commonSettings,
             ICacheManager cacheManager,
             IEventPublisher eventPublisher)

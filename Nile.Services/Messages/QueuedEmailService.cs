@@ -13,7 +13,7 @@ namespace Nile.Services.Messages
     public partial class QueuedEmailService : IQueuedEmailService
     {
         private readonly IRepository<QueuedEmail> _queuedEmailRepository;
-        private readonly IDbContext _dbContext;
+        private readonly IEfDbContext _dbContext;
         private readonly IDataProvider _dataProvider;
         private readonly CommonSettings _commonSettings;
         private readonly IEventPublisher _eventPublisher;
@@ -28,7 +28,7 @@ namespace Nile.Services.Messages
         /// <param name="commonSettings">Common settings</param>
         public QueuedEmailService(IRepository<QueuedEmail> queuedEmailRepository,
             IEventPublisher eventPublisher,
-            IDbContext dbContext, 
+            IEfDbContext dbContext, 
             IDataProvider dataProvider, 
             CommonSettings commonSettings)
         {

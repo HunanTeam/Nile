@@ -19,7 +19,7 @@ namespace Nile.Services.Logging
 
         private readonly IRepository<Log> _logRepository;
         private readonly IWebHelper _webHelper;
-        private readonly IDbContext _dbContext;
+        private readonly IEfDbContext _dbContext;
         private readonly IDataProvider _dataProvider;
         private readonly CommonSettings _commonSettings;
         
@@ -37,7 +37,7 @@ namespace Nile.Services.Logging
         /// <param name="commonSettings">Common settings</param>
         public DefaultLogger(IRepository<Log> logRepository, 
             IWebHelper webHelper,
-            IDbContext dbContext, 
+            IEfDbContext dbContext, 
             IDataProvider dataProvider, 
             CommonSettings commonSettings)
         {

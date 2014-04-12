@@ -21,7 +21,7 @@ namespace Nile.Web.Framework.Mvc
         /// <param name="contextName">Context name</param>
         public static void RegisterPluginDataContext<T>(this IDependencyRegistrar dependencyRegistrar,
             ContainerBuilder builder, string contextName)
-             where T: IDbContext
+             where T: IEfDbContext
         {
             //data layer
             var dataSettingsManager = new DataSettingsManager();
@@ -30,8 +30,8 @@ namespace Nile.Web.Framework.Mvc
             if (dataProviderSettings != null && dataProviderSettings.IsValid())
             {
                 //register named context
-                builder.Register<IDbContext>(c => (IDbContext)Activator.CreateInstance(typeof(T), new object[] { dataProviderSettings.DataConnectionString }))
-                    .Named<IDbContext>(contextName)
+                builder.Register<IEfDbContext>(c => (IEfDbContext)Activator.CreateInstance(typeof(T), new object[] { dataProviderSettings.DataConnectionString }))
+                    .Named<IEfDbContext>(contextName)
                     .InstancePerHttpRequest();
 
                 builder.Register<T>(c => (T)Activator.CreateInstance(typeof(T), new object[] { dataProviderSettings.DataConnectionString }))
@@ -40,8 +40,8 @@ namespace Nile.Web.Framework.Mvc
             else
             {
                 //register named context
-                builder.Register<IDbContext>(c => (T)Activator.CreateInstance(typeof(T), new object[] { c.Resolve<DataSettings>().DataConnectionString }))
-                    .Named<IDbContext>(contextName)
+                builder.Register<IEfDbContext>(c => (T)Activator.CreateInstance(typeof(T), new object[] { c.Resolve<DataSettings>().DataConnectionString }))
+                    .Named<IEfDbContext>(contextName)
                     .InstancePerHttpRequest();
 
                 builder.Register<T>(c => (T)Activator.CreateInstance(typeof(T), new object[] { c.Resolve<DataSettings>().DataConnectionString }))

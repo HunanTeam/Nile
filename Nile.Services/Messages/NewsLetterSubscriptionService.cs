@@ -12,10 +12,10 @@ namespace Nile.Services.Messages
     public class NewsLetterSubscriptionService : INewsLetterSubscriptionService
     {
         private readonly IEventPublisher _eventPublisher;
-        private readonly IDbContext _context;
+        private readonly IEfDbContext _context;
         private readonly IRepository<NewsLetterSubscription> _subscriptionRepository;
 
-        public NewsLetterSubscriptionService(IDbContext context, IRepository<NewsLetterSubscription> subscriptionRepository, IEventPublisher eventPublisher)
+        public NewsLetterSubscriptionService(IEfDbContext context, IRepository<NewsLetterSubscription> subscriptionRepository, IEventPublisher eventPublisher)
         {
             _context = context;
             _subscriptionRepository = subscriptionRepository;

@@ -13,21 +13,22 @@ namespace Nile.Data
     /// </summary>
     public partial class EfRepository<T> : IRepository<T> where T : BaseEntity
     {
-        private readonly IDbContext _context;
+        private readonly IEfDbContext _context;
         private IDbSet<T> _entities;
 
         /// <summary>
         /// Ctor
         /// </summary>
         /// <param name="context">Object context</param>
-        public EfRepository(IDbContext context)
+        public EfRepository(IEfDbContext context)
         {
             this._context = context;
+            this.AutoCommitEnabled = true;
         }
 
         public virtual T GetById(object id)
         {
-            
+
             return this.Entities.Find(id);
         }
 
@@ -39,8 +40,11 @@ namespace Nile.Data
                     throw new ArgumentNullException("entity");
 
                 this.Entities.Add(entity);
+                if (this.AutoCommitEnabled)
+                {
+                    this._context.SaveChanges();
+                }
 
-                this._context.SaveChanges();
             }
             catch (DbEntityValidationException dbEx)
             {
@@ -63,7 +67,10 @@ namespace Nile.Data
                 if (entity == null)
                     throw new ArgumentNullException("entity");
 
-                this._context.SaveChanges();
+                if (this.AutoCommitEnabled)
+                {
+                    this._context.SaveChanges();
+                }
             }
             catch (DbEntityValidationException dbEx)
             {
@@ -88,7 +95,10 @@ namespace Nile.Data
 
                 this.Entities.Remove(entity);
 
-                this._context.SaveChanges();
+                if (this.AutoCommitEnabled)
+                {
+                    this._context.SaveChanges();
+                }
             }
             catch (DbEntityValidationException dbEx)
             {
@@ -118,8 +128,26 @@ namespace Nile.Data
             {
                 if (_entities == null)
                     _entities = _context.Set<T>();
+
                 return _entities;
             }
+        }
+
+
+        public IDBContext DBContext
+        {
+            get
+            {
+                return _context;
+            }
+
+        }
+
+
+        public bool AutoCommitEnabled
+        {
+            get;
+            set;
         }
     }
 }

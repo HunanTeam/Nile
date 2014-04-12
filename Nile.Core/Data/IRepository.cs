@@ -12,5 +12,7 @@ namespace Nile.Core.Data
         void Update(T entity);
         void Delete(T entity);
         IQueryable<T> Table { get; }
+        bool AutoCommitEnabled { get; set; }
+        IDBContext DBContext { get; }
     }
 }

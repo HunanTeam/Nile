@@ -53,7 +53,7 @@ namespace Nile.Services.Localization
         private readonly ILanguageService _languageService;
         private readonly ICacheManager _cacheManager;
         private readonly IDataProvider _dataProvider;
-        private readonly IDbContext _dbContext;
+        private readonly IEfDbContext _dbContext;
         private readonly CommonSettings _commonSettings;
         private readonly LocalizationSettings _localizationSettings;
         private readonly IEventPublisher _eventPublisher;
@@ -79,7 +79,7 @@ namespace Nile.Services.Localization
             ILogger logger, IWorkContext workContext,
             IRepository<LocaleStringResource> lsrRepository, 
             ILanguageService languageService,
-            IDataProvider dataProvider, IDbContext dbContext, CommonSettings commonSettings,
+            IDataProvider dataProvider, IEfDbContext dbContext, CommonSettings commonSettings,
             LocalizationSettings localizationSettings, IEventPublisher eventPublisher)
         {
             this._cacheManager = cacheManager;
